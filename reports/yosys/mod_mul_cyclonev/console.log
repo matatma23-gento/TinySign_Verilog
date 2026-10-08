@@ -1,0 +1,1747 @@
+
+-- Executing script file `/home/mateus/Documents/Peruri/TinySign/reports/yosys/mod_mul_cyclonev/run.ys' --
+
+1. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_add.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_add.v' to AST representation.
+Generating RTLIL representation for module `\mod_add'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_inv.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_inv.v' to AST representation.
+Generating RTLIL representation for module `\mod_inv'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v' to AST representation.
+Generating RTLIL representation for module `\mod_mul'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_sub.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_sub.v' to AST representation.
+Generating RTLIL representation for module `\mod_sub'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v' to AST representation.
+Generating RTLIL representation for module `\montgomery_mul'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/ec/point_add.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/ec/point_add.v' to AST representation.
+Generating RTLIL representation for module `\point_add'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/ec/point_double.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/ec/point_double.v' to AST representation.
+Generating RTLIL representation for module `\point_double'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/ec/point_ops.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/ec/point_ops.v' to AST representation.
+Generating RTLIL representation for module `\point_ops'.
+Warning: Replacing memory \t with list of registers. See /home/mateus/Documents/Peruri/TinySign/rtl/ec/point_ops.v:109
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/ecdsa/ecdsa_signer.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/ecdsa/ecdsa_signer.v' to AST representation.
+Generating RTLIL representation for module `\ecdsa_signer'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/ecdsa/scalar_mult.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/ecdsa/scalar_mult.v' to AST representation.
+Generating RTLIL representation for module `\scalar_mult'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/nonce/hmac_sha256.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/nonce/hmac_sha256.v' to AST representation.
+Generating RTLIL representation for module `\hmac_sha256'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/nonce/rfc6979.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/nonce/rfc6979.v' to AST representation.
+Generating RTLIL representation for module `\rfc6979'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/platform/tinysign_de10nano.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/platform/tinysign_de10nano.v' to AST representation.
+Generating RTLIL representation for module `\tinysign_de10nano'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/platform/tinysign_de10nano_selftest.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/platform/tinysign_de10nano_selftest.v' to AST representation.
+Generating RTLIL representation for module `\tinysign_de10nano_selftest'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/security/key_manager.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/security/key_manager.v' to AST representation.
+Generating RTLIL representation for module `\key_manager'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/security/tinysign_core.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/security/tinysign_core.v' to AST representation.
+Generating RTLIL representation for module `\tinysign_core'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/sha256/sha256_compress.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/sha256/sha256_compress.v' to AST representation.
+Generating RTLIL representation for module `\sha256_compress'.
+Warning: Replacing memory \w with list of registers. See /home/mateus/Documents/Peruri/TinySign/rtl/sha256/sha256_compress.v:73
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/sha256/sha256_hash.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/sha256/sha256_hash.v' to AST representation.
+Generating RTLIL representation for module `\sha256_hash'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/test_support/selftest_uart_report.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/test_support/selftest_uart_report.v' to AST representation.
+Generating RTLIL representation for module `\selftest_uart_report'.
+Successfully finished Verilog frontend.
+
+20. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/test_support/tinysign_board_selftest.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/test_support/tinysign_board_selftest.v' to AST representation.
+Generating RTLIL representation for module `\tinysign_board_selftest'.
+Successfully finished Verilog frontend.
+
+21. Executing Verilog-2005 frontend: /home/mateus/Documents/Peruri/TinySign/rtl/test_support/uart_tx.v
+Parsing Verilog input from `/home/mateus/Documents/Peruri/TinySign/rtl/test_support/uart_tx.v' to AST representation.
+Generating RTLIL representation for module `\uart_tx'.
+Successfully finished Verilog frontend.
+
+22. Executing HIERARCHY pass (managing design hierarchy).
+
+22.1. Analyzing design hierarchy..
+Top module:  \mod_mul
+Used module:     \montgomery_mul
+Parameter \WIDTH = 256
+
+22.2. Executing AST frontend in derive mode using pre-parsed AST for module `\montgomery_mul'.
+Parameter \WIDTH = 256
+Generating RTLIL representation for module `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000'.
+
+22.3. Analyzing design hierarchy..
+Top module:  \mod_mul
+Used module:     $paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000
+
+22.4. Analyzing design hierarchy..
+Top module:  \mod_mul
+Used module:     $paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000
+Removing unused module `\uart_tx'.
+Removing unused module `\tinysign_board_selftest'.
+Removing unused module `\selftest_uart_report'.
+Removing unused module `\sha256_hash'.
+Removing unused module `\sha256_compress'.
+Removing unused module `\tinysign_core'.
+Removing unused module `\key_manager'.
+Removing unused module `\tinysign_de10nano_selftest'.
+Removing unused module `\tinysign_de10nano'.
+Removing unused module `\rfc6979'.
+Removing unused module `\hmac_sha256'.
+Removing unused module `\scalar_mult'.
+Removing unused module `\ecdsa_signer'.
+Removing unused module `\point_ops'.
+Removing unused module `\point_double'.
+Removing unused module `\point_add'.
+Removing unused module `\montgomery_mul'.
+Removing unused module `\mod_sub'.
+Removing unused module `\mod_inv'.
+Removing unused module `\mod_add'.
+Removed 20 unused modules.
+
+23. Executing SYNTH_INTEL_ALM pass.
+
+23.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/cyclonev/cells_sim.v
+Parsing SystemVerilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/cyclonev/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\VCC'.
+Generating RTLIL representation for module `\GND'.
+Generating RTLIL representation for module `\cyclonev_io_ibuf'.
+Generating RTLIL representation for module `\cyclonev_io_obuf'.
+Generating RTLIL representation for module `\cyclonev_lcell_comb'.
+Generating RTLIL representation for module `\dffeas'.
+Successfully finished Verilog frontend.
+
+23.2. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/alm_sim.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/alm_sim.v' to AST representation.
+Generating RTLIL representation for module `\MISTRAL_ALUT6'.
+Generating RTLIL representation for module `\MISTRAL_ALUT5'.
+Generating RTLIL representation for module `\MISTRAL_ALUT4'.
+Generating RTLIL representation for module `\MISTRAL_ALUT3'.
+Generating RTLIL representation for module `\MISTRAL_ALUT2'.
+Generating RTLIL representation for module `\MISTRAL_NOT'.
+Generating RTLIL representation for module `\MISTRAL_ALUT_ARITH'.
+Successfully finished Verilog frontend.
+
+23.3. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dff_sim.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dff_sim.v' to AST representation.
+Generating RTLIL representation for module `\MISTRAL_FF'.
+Successfully finished Verilog frontend.
+
+23.4. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dsp_sim.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dsp_sim.v' to AST representation.
+Generating RTLIL representation for module `\MISTRAL_MUL27X27'.
+Generating RTLIL representation for module `\MISTRAL_MUL18X18'.
+Generating RTLIL representation for module `\MISTRAL_MUL9X9'.
+Successfully finished Verilog frontend.
+
+23.5. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v' to AST representation.
+Generating RTLIL representation for module `\MISTRAL_MLAB'.
+Generating RTLIL representation for module `\MISTRAL_M10K'.
+Successfully finished Verilog frontend.
+
+23.6. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/misc_sim.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/misc_sim.v' to AST representation.
+Generating RTLIL representation for module `\MISTRAL_IB'.
+Generating RTLIL representation for module `\MISTRAL_OB'.
+Generating RTLIL representation for module `\MISTRAL_IO'.
+Generating RTLIL representation for module `\MISTRAL_CLKBUF'.
+Successfully finished Verilog frontend.
+
+23.7. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/abc9_model.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__MISTRAL_FF_SYNCONLY'.
+Successfully finished Verilog frontend.
+
+23.8. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel/common/altpll_bb.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel/common/altpll_bb.v' to AST representation.
+Successfully finished Verilog frontend.
+
+23.9. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/megafunction_bb.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/megafunction_bb.v' to AST representation.
+Generating RTLIL representation for module `\altera_pll'.
+Generating RTLIL representation for module `\altera_std_synchronizer'.
+Generating RTLIL representation for module `\altddio_in'.
+Generating RTLIL representation for module `\altddio_out'.
+Generating RTLIL representation for module `\altddio_bidir'.
+Generating RTLIL representation for module `\altiobuf_in'.
+Generating RTLIL representation for module `\altiobuf_out'.
+Generating RTLIL representation for module `\altiobuf_bidir'.
+Generating RTLIL representation for module `\altsyncram'.
+Generating RTLIL representation for module `\cyclonev_mlab_cell'.
+Generating RTLIL representation for module `\cyclonev_mac'.
+Generating RTLIL representation for module `\cyclone10gx_mac'.
+Generating RTLIL representation for module `\cyclonev_ram_block'.
+Generating RTLIL representation for module `\cyclone10gx_io_ibuf'.
+Generating RTLIL representation for module `\cyclone10gx_io_obuf'.
+Generating RTLIL representation for module `\cyclonev_clkena'.
+Generating RTLIL representation for module `\cyclone10gx_clkena'.
+Generating RTLIL representation for module `\cyclonev_oscillator'.
+Generating RTLIL representation for module `\cyclonev_hps_interface_mpu_general_purpose'.
+Successfully finished Verilog frontend.
+
+23.10. Executing HIERARCHY pass (managing design hierarchy).
+
+23.10.1. Analyzing design hierarchy..
+Top module:  \mod_mul
+Used module:     $paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000
+
+23.10.2. Analyzing design hierarchy..
+Top module:  \mod_mul
+Used module:     $paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000
+Removed 0 unused modules.
+
+23.11. Executing PROC pass (convert processes to netlists).
+
+23.11.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+23.11.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:100$1872 in module MISTRAL_MLAB.
+Marked 3 switch rules as full_case in process $proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dff_sim.v:118$1845 in module MISTRAL_FF.
+Marked 4 switch rules as full_case in process $proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769 in module $paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.
+Marked 5 switch rules as full_case in process $proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37 in module mod_mul.
+Removed a total of 0 dead cases.
+
+23.11.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 5 redundant assignments.
+Promoted 7 assignments to connections.
+
+23.11.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\MISTRAL_MLAB.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:57$1892'.
+  Set init value: \mem = 0
+Found init rule in `\MISTRAL_FF.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dff_sim.v:0$1847'.
+  Set init value: \Q = 1'0
+
+23.11.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \ACLR in `\MISTRAL_FF.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dff_sim.v:118$1845'.
+Found async reset \rst_n in `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769'.
+Found async reset \rst_n in `\mod_mul.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37'.
+
+23.11.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+<suppressed ~14 debug messages>
+
+23.11.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\MISTRAL_MLAB.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:57$1892'.
+Creating decoders for process `\MISTRAL_MLAB.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:100$1872'.
+     1/4: $1$lookahead\mem$1871[31:0]$1877
+     2/4: $1$bitselwrite$data$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:101$1869[31:0]$1879
+     3/4: $1$bitselwrite$mask$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:101$1868[31:0]$1880
+     4/4: $1$bitselwrite$sel$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:101$1870[4:0]$1878
+Creating decoders for process `\MISTRAL_FF.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dff_sim.v:0$1847'.
+Creating decoders for process `\MISTRAL_FF.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dff_sim.v:118$1845'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769'.
+     1/9: $0\error[0:0]
+     2/9: $0\done[0:0]
+     3/9: $0\accumulator[256:0]
+     4/9: $0\round_count[7:0]
+     5/9: $0\modulus_reg[255:0]
+     6/9: $0\b_reg[255:0]
+     7/9: $0\a_reg[255:0]
+     8/9: $0\state[1:0]
+     9/9: $0\result[255:0]
+Creating decoders for process `\mod_mul.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37'.
+     1/9: $0\error[0:0]
+     2/9: $0\done[0:0]
+     3/9: $0\mont_start[0:0]
+     4/9: $0\round_count[7:0]
+     5/9: $0\b_mont[255:0]
+     6/9: $0\modulus_reg[255:0]
+     7/9: $0\a_reg[255:0]
+     8/9: $0\state[1:0]
+     9/9: $0\result[255:0]
+
+23.11.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+23.11.9. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\MISTRAL_MLAB.$lookahead\mem$1871' using process `\MISTRAL_MLAB.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:100$1872'.
+  created $dff cell `$procdff$2097' with positive edge clock.
+Creating register for signal `\MISTRAL_MLAB.$bitselwrite$sel$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:101$1870' using process `\MISTRAL_MLAB.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:100$1872'.
+  created $dff cell `$procdff$2098' with positive edge clock.
+Creating register for signal `\MISTRAL_MLAB.$bitselwrite$data$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:101$1869' using process `\MISTRAL_MLAB.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:100$1872'.
+  created $dff cell `$procdff$2099' with positive edge clock.
+Creating register for signal `\MISTRAL_MLAB.$bitselwrite$mask$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:101$1868' using process `\MISTRAL_MLAB.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:100$1872'.
+  created $dff cell `$procdff$2100' with positive edge clock.
+Creating register for signal `\MISTRAL_MLAB.\mem' using process `\MISTRAL_MLAB.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:100$1872'.
+  created $dff cell `$procdff$2101' with positive edge clock.
+Creating register for signal `\MISTRAL_FF.\Q' using process `\MISTRAL_FF.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dff_sim.v:118$1845'.
+  created $adff cell `$procdff$2102' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.\result' using process `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769'.
+  created $adff cell `$procdff$2103' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.\done' using process `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769'.
+  created $adff cell `$procdff$2104' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.\error' using process `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769'.
+  created $adff cell `$procdff$2105' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.\state' using process `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769'.
+  created $adff cell `$procdff$2106' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.\a_reg' using process `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769'.
+  created $adff cell `$procdff$2107' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.\b_reg' using process `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769'.
+  created $adff cell `$procdff$2108' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.\modulus_reg' using process `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769'.
+  created $adff cell `$procdff$2109' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.\round_count' using process `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769'.
+  created $adff cell `$procdff$2110' with positive edge clock and negative level reset.
+Creating register for signal `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.\accumulator' using process `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769'.
+  created $adff cell `$procdff$2111' with positive edge clock and negative level reset.
+Creating register for signal `\mod_mul.\result' using process `\mod_mul.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37'.
+  created $adff cell `$procdff$2112' with positive edge clock and negative level reset.
+Creating register for signal `\mod_mul.\done' using process `\mod_mul.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37'.
+  created $adff cell `$procdff$2113' with positive edge clock and negative level reset.
+Creating register for signal `\mod_mul.\error' using process `\mod_mul.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37'.
+  created $adff cell `$procdff$2114' with positive edge clock and negative level reset.
+Creating register for signal `\mod_mul.\state' using process `\mod_mul.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37'.
+  created $adff cell `$procdff$2115' with positive edge clock and negative level reset.
+Creating register for signal `\mod_mul.\a_reg' using process `\mod_mul.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37'.
+  created $adff cell `$procdff$2116' with positive edge clock and negative level reset.
+Creating register for signal `\mod_mul.\modulus_reg' using process `\mod_mul.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37'.
+  created $adff cell `$procdff$2117' with positive edge clock and negative level reset.
+Creating register for signal `\mod_mul.\b_mont' using process `\mod_mul.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37'.
+  created $adff cell `$procdff$2118' with positive edge clock and negative level reset.
+Creating register for signal `\mod_mul.\round_count' using process `\mod_mul.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37'.
+  created $adff cell `$procdff$2119' with positive edge clock and negative level reset.
+Creating register for signal `\mod_mul.\mont_start' using process `\mod_mul.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37'.
+  created $adff cell `$procdff$2120' with positive edge clock and negative level reset.
+
+23.11.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+23.11.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `MISTRAL_MLAB.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:57$1892'.
+Found and cleaned up 1 empty switch in `\MISTRAL_MLAB.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:100$1872'.
+Removing empty process `MISTRAL_MLAB.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/mem_sim.v:100$1872'.
+Removing empty process `MISTRAL_FF.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dff_sim.v:0$1847'.
+Found and cleaned up 3 empty switches in `\MISTRAL_FF.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dff_sim.v:118$1845'.
+Removing empty process `MISTRAL_FF.$proc$/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dff_sim.v:118$1845'.
+Found and cleaned up 4 empty switches in `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769'.
+Removing empty process `$paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:39$1769'.
+Found and cleaned up 6 empty switches in `\mod_mul.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37'.
+Removing empty process `mod_mul.$proc$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:43$37'.
+Cleaned up 14 empty switches.
+
+23.11.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.
+<suppressed ~9 debug messages>
+Optimizing module mod_mul.
+<suppressed ~7 debug messages>
+
+23.12. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod\montgomery_mul\WIDTH=s32'00000000000000000000000100000000.
+<suppressed ~1 debug messages>
+
+23.13. Executing TRIBUF pass.
+
+23.14. Executing DEMINOUT pass (demote inout ports to input or output).
+
+23.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+Removed 3 unused cells and 70 unused wires.
+<suppressed ~5 debug messages>
+
+23.17. Executing CHECK pass (checking for obvious problems).
+Checking module mod_mul...
+Found and reported 0 problems.
+
+23.18. Executing OPT pass (performing simple optimizations).
+
+23.18.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.18.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+<suppressed ~90 debug messages>
+Removed a total of 30 cells.
+
+23.18.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+23.18.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.18.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.18.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.18.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+Removed 0 unused cells and 30 unused wires.
+<suppressed ~1 debug messages>
+
+23.18.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.18.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+23.18.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+23.18.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.18.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.18.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.18.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+
+23.18.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.18.16. Finished OPT passes. (There is nothing left to do.)
+
+23.19. Executing FSM pass (extract and optimize FSM).
+
+23.19.1. Executing FSM_DETECT pass (finding FSMs in design).
+Not marking mod_mul.state as FSM state register:
+    Users of register don't seem to benefit from recoding.
+    Circuit seems to be self-resetting.
+Not marking mod_mul.u_montgomery.state as FSM state register:
+    Circuit seems to be self-resetting.
+
+23.19.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+23.19.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+23.19.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+
+23.19.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+23.19.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+23.19.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+23.19.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+23.20. Executing OPT pass (performing simple optimizations).
+
+23.20.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.20.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.20.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+23.20.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.20.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.20.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding EN signal on $procdff$2119 ($adff) from module mod_mul (D = $0\round_count[7:0], Q = \round_count).
+Adding EN signal on $procdff$2118 ($adff) from module mod_mul (D = $0\b_mont[255:0], Q = \b_mont).
+Adding EN signal on $procdff$2117 ($adff) from module mod_mul (D = $0\modulus_reg[255:0], Q = \modulus_reg).
+Adding EN signal on $procdff$2116 ($adff) from module mod_mul (D = $0\a_reg[255:0], Q = \a_reg).
+Adding EN signal on $procdff$2115 ($adff) from module mod_mul (D = $0\state[1:0], Q = \state).
+Adding EN signal on $procdff$2112 ($adff) from module mod_mul (D = \u_montgomery.result, Q = \result).
+Adding EN signal on $flatten\u_montgomery.$procdff$2111 ($adff) from module mod_mul (D = $flatten\u_montgomery.$0\accumulator[256:0], Q = \u_montgomery.accumulator).
+Adding EN signal on $flatten\u_montgomery.$procdff$2110 ($adff) from module mod_mul (D = $flatten\u_montgomery.$0\round_count[7:0], Q = \u_montgomery.round_count).
+Adding EN signal on $flatten\u_montgomery.$procdff$2109 ($adff) from module mod_mul (D = $flatten\u_montgomery.$0\modulus_reg[255:0], Q = \u_montgomery.modulus_reg).
+Adding EN signal on $flatten\u_montgomery.$procdff$2108 ($adff) from module mod_mul (D = $flatten\u_montgomery.$0\b_reg[255:0], Q = \u_montgomery.b_reg).
+Adding EN signal on $flatten\u_montgomery.$procdff$2107 ($adff) from module mod_mul (D = $flatten\u_montgomery.$0\a_reg[255:0], Q = \u_montgomery.a_reg).
+Adding EN signal on $flatten\u_montgomery.$procdff$2106 ($adff) from module mod_mul (D = $flatten\u_montgomery.$0\state[1:0], Q = \u_montgomery.state).
+Adding EN signal on $flatten\u_montgomery.$procdff$2103 ($adff) from module mod_mul (D = \u_montgomery.reduced [255:0], Q = \u_montgomery.result).
+
+23.20.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+Removed 4 unused cells and 4 unused wires.
+<suppressed ~5 debug messages>
+
+23.20.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+<suppressed ~9 debug messages>
+
+23.20.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+23.20.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~19 debug messages>
+
+23.20.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.20.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+<suppressed ~96 debug messages>
+Removed a total of 32 cells.
+
+23.20.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.20.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+Removed 0 unused cells and 32 unused wires.
+<suppressed ~1 debug messages>
+
+23.20.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.20.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+23.20.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+23.20.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.20.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.20.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.20.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+
+23.20.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.20.23. Finished OPT passes. (There is nothing left to do.)
+
+23.21. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 257) from port B of cell mod_mul.$ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:32$33 ($ge).
+Removed top 1 bits (of 257) from port B of cell mod_mul.$sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:33$34 ($sub).
+Removed top 1 bits (of 257) from mux cell mod_mul.$ternary$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:32$35 ($mux).
+Removed top 30 bits (of 32) from port B of cell mod_mul.$lt$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:51$39 ($lt).
+Removed top 2 bits (of 258) from mux cell mod_mul.$flatten\u_montgomery.$ternary$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:32$1761 ($mux).
+Removed top 1 bits (of 258) from port A of cell mod_mul.$flatten\u_montgomery.$add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:31$1762 ($add).
+Removed top 2 bits (of 258) from port B of cell mod_mul.$flatten\u_montgomery.$add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:31$1762 ($add).
+Removed top 2 bits (of 258) from mux cell mod_mul.$flatten\u_montgomery.$ternary$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:34$1763 ($mux).
+Removed top 2 bits (of 258) from port B of cell mod_mul.$flatten\u_montgomery.$add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:33$1764 ($add).
+Removed top 1 bits (of 257) from port B of cell mod_mul.$flatten\u_montgomery.$ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:35$1765 ($ge).
+Removed top 1 bits (of 257) from port B of cell mod_mul.$flatten\u_montgomery.$sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:36$1766 ($sub).
+Removed top 1 bits (of 257) from mux cell mod_mul.$flatten\u_montgomery.$ternary$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:35$1767 ($mux).
+Removed top 30 bits (of 32) from port B of cell mod_mul.$flatten\u_montgomery.$lt$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:47$1771 ($lt).
+Removed top 1 bits (of 2) from port B of cell mod_mul.$flatten\u_montgomery.$procmux$1932_CMP0 ($eq).
+Removed top 1 bits (of 2) from port B of cell mod_mul.$procmux$2024_CMP0 ($eq).
+Removed top 1 bits (of 257) from port Y of cell mod_mul.$sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:33$34 ($sub).
+Removed top 1 bits (of 257) from port A of cell mod_mul.$sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:33$34 ($sub).
+Removed top 1 bits (of 257) from port Y of cell mod_mul.$flatten\u_montgomery.$sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:36$1766 ($sub).
+Removed top 1 bits (of 257) from port A of cell mod_mul.$flatten\u_montgomery.$sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:36$1766 ($sub).
+Removed top 1 bits (of 257) from wire mod_mul.$flatten\u_montgomery.$sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:36$1766_Y.
+Removed top 2 bits (of 258) from wire mod_mul.$flatten\u_montgomery.$ternary$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:32$1761_Y.
+Removed top 2 bits (of 258) from wire mod_mul.$flatten\u_montgomery.$ternary$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:34$1763_Y.
+Removed top 1 bits (of 257) from wire mod_mul.$sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:33$34_Y.
+Removed top 1 bits (of 257) from wire mod_mul.converted.
+
+23.22. Executing PEEPOPT pass (run peephole optimizers).
+
+23.23. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+Removed 0 unused cells and 5 unused wires.
+<suppressed ~1 debug messages>
+
+23.24. Executing SHARE pass (SAT-based resource sharing).
+
+23.25. Executing TECHMAP pass (map to technology primitives).
+
+23.25.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/cmp2lut.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+23.25.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~114 debug messages>
+
+23.26. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.27. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+
+23.28. Executing TECHMAP pass (map to technology primitives).
+
+23.28.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+23.28.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+23.29. Executing TECHMAP pass (map to technology primitives).
+
+23.29.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+23.29.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+23.30. Executing TECHMAP pass (map to technology primitives).
+
+23.30.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+23.30.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+23.31. Executing TECHMAP pass (map to technology primitives).
+
+23.31.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+23.31.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+23.32. Executing TECHMAP pass (map to technology primitives).
+
+23.32.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+23.32.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+23.33. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module mod_mul:
+  creating $macc model for $add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:62$47 ($add).
+  creating $macc model for $flatten\u_montgomery.$add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:31$1762 ($add).
+  creating $macc model for $flatten\u_montgomery.$add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:33$1764 ($add).
+  creating $macc model for $flatten\u_montgomery.$add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:58$1780 ($add).
+  creating $macc model for $flatten\u_montgomery.$sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:36$1766 ($sub).
+  creating $macc model for $sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:33$34 ($sub).
+  creating $alu model for $macc $sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:33$34.
+  creating $alu model for $macc $flatten\u_montgomery.$sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:36$1766.
+  creating $alu model for $macc $flatten\u_montgomery.$add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:58$1780.
+  creating $alu model for $macc $flatten\u_montgomery.$add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:33$1764.
+  creating $alu model for $macc $flatten\u_montgomery.$add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:31$1762.
+  creating $alu model for $macc $add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:62$47.
+  creating $alu model for $flatten\u_montgomery.$ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:35$1765 ($ge): new $alu
+  creating $alu model for $flatten\u_montgomery.$ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:47$1774 ($ge): new $alu
+  creating $alu model for $flatten\u_montgomery.$ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:47$1776 ($ge): new $alu
+  creating $alu model for $flatten\u_montgomery.$lt$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:47$1771 ($lt): new $alu
+  creating $alu model for $ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:32$33 ($ge): new $alu
+  creating $alu model for $ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:51$42 ($ge): new $alu
+  creating $alu model for $ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:51$44 ($ge): new $alu
+  creating $alu model for $lt$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:51$39 ($lt): new $alu
+  creating $alu cell for $lt$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:51$39: $auto$alumacc.cc:485:replace_alu$2254
+  creating $alu cell for $ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:51$44: $auto$alumacc.cc:485:replace_alu$2265
+  creating $alu cell for $ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:51$42: $auto$alumacc.cc:485:replace_alu$2278
+  creating $alu cell for $ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:32$33: $auto$alumacc.cc:485:replace_alu$2291
+  creating $alu cell for $flatten\u_montgomery.$lt$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:47$1771: $auto$alumacc.cc:485:replace_alu$2300
+  creating $alu cell for $flatten\u_montgomery.$ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:47$1776: $auto$alumacc.cc:485:replace_alu$2311
+  creating $alu cell for $flatten\u_montgomery.$ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:47$1774: $auto$alumacc.cc:485:replace_alu$2320
+  creating $alu cell for $flatten\u_montgomery.$ge$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:35$1765: $auto$alumacc.cc:485:replace_alu$2329
+  creating $alu cell for $add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:62$47: $auto$alumacc.cc:485:replace_alu$2338
+  creating $alu cell for $flatten\u_montgomery.$add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:31$1762: $auto$alumacc.cc:485:replace_alu$2341
+  creating $alu cell for $flatten\u_montgomery.$add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:33$1764: $auto$alumacc.cc:485:replace_alu$2344
+  creating $alu cell for $flatten\u_montgomery.$add$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:58$1780: $auto$alumacc.cc:485:replace_alu$2347
+  creating $alu cell for $flatten\u_montgomery.$sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/montgomery_mul.v:36$1766: $auto$alumacc.cc:485:replace_alu$2350
+  creating $alu cell for $sub$/home/mateus/Documents/Peruri/TinySign/rtl/arithmetic/mod_mul.v:33$34: $auto$alumacc.cc:485:replace_alu$2353
+  created 14 $alu and 0 $macc cells.
+
+23.34. Executing TECHMAP pass (map to technology primitives).
+
+23.34.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/arith_alm_map.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/arith_alm_map.v' to AST representation.
+Generating RTLIL representation for module `\$alu'.
+Successfully finished Verilog frontend.
+
+23.34.2. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dsp_map.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dsp_map.v' to AST representation.
+Generating RTLIL representation for module `\__MUL27X27'.
+Generating RTLIL representation for module `\__MUL18X18'.
+Generating RTLIL representation for module `\__MUL9X9'.
+Successfully finished Verilog frontend.
+
+23.34.3. Continuing TECHMAP pass.
+Using template $paramod$7aba6cca14c4065c313ace18fb6681cb898c8ef4\$alu for cells of type $alu.
+Using template $paramod$1a4e4369e330e36aac5e7bc8a2c9e8f1f813a975\$alu for cells of type $alu.
+Using template $paramod$87032faa0925342ad54f87ff55f7c65fc466b348\$alu for cells of type $alu.
+Using template $paramod$ba1381eeab63c9b3b2bf08867a3b289512ac178f\$alu for cells of type $alu.
+Using template $paramod$7a489ac616044e35851f79798b18c73b5cf18f27\$alu for cells of type $alu.
+Using template $paramod$9c5048ed07ebaf3733fbbf6669582c12e6a28a64\$alu for cells of type $alu.
+No more expansions possible.
+<suppressed ~158 debug messages>
+
+23.35. Executing OPT pass (performing simple optimizations).
+
+23.35.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+<suppressed ~2134 debug messages>
+
+23.35.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+<suppressed ~24 debug messages>
+Removed a total of 8 cells.
+
+23.35.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+23.35.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.35.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.35.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.35.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+Removed 16429 unused cells and 18766 unused wires.
+<suppressed ~16449 debug messages>
+
+23.35.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+<suppressed ~8 debug messages>
+
+23.35.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+23.35.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+23.35.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.35.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.35.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.35.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+Removed 0 unused cells and 8 unused wires.
+<suppressed ~1 debug messages>
+
+23.35.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.35.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+23.35.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~20 debug messages>
+
+23.35.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.35.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.35.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.35.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+
+23.35.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.35.23. Finished OPT passes. (There is nothing left to do.)
+
+23.36. Executing MEMORY pass.
+
+23.36.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+23.36.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+23.36.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+23.36.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+23.36.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+23.36.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+
+23.36.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+23.36.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+23.36.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+
+23.36.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+23.37. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+
+23.38. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+
+23.39. Executing TECHMAP pass (map to technology primitives).
+
+23.39.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/bram_m10k_map.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/bram_m10k_map.v' to AST representation.
+Generating RTLIL representation for module `\$__MISTRAL_M10K'.
+Successfully finished Verilog frontend.
+
+23.39.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+23.40. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+
+23.41. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+23.42. Executing OPT pass (performing simple optimizations).
+
+23.42.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+<suppressed ~72 debug messages>
+
+23.42.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+<suppressed ~6 debug messages>
+Removed a total of 2 cells.
+
+23.42.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~15 debug messages>
+
+23.42.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+    New ctrl vector for $pmux cell $flatten\u_montgomery.$procmux$1930: $flatten\u_montgomery.$procmux$1932_CMP
+    New ctrl vector for $pmux cell $flatten\u_montgomery.$procmux$1940: $flatten\u_montgomery.$procmux$1932_CMP
+    New ctrl vector for $pmux cell $procmux$2028: $procmux$2024_CMP
+    New ctrl vector for $pmux cell $procmux$2077: { $procmux$2009_CMP $procmux$2024_CMP }
+  Optimizing cells in module \mod_mul.
+Performed a total of 4 changes.
+
+23.42.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.42.6. Executing OPT_SHARE pass.
+
+23.42.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.42.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+Removed 0 unused cells and 45 unused wires.
+<suppressed ~1 debug messages>
+
+23.42.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.42.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+23.42.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~15 debug messages>
+
+23.42.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.42.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.42.14. Executing OPT_SHARE pass.
+
+23.42.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.42.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+
+23.42.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.42.18. Finished OPT passes. (There is nothing left to do.)
+
+23.43. Executing TECHMAP pass (map to technology primitives).
+
+23.43.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+23.43.2. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $logic_or.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $reduce_and.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $ne.
+Using template $paramod$771778cdf7e4f27529fd66907348ecefe7bfe75e\_90_pmux for cells of type $pmux.
+Using template $paramod$521ce43182eecb9f60c72393a788160d2c356bf5\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $reduce_or.
+Using extmapper simplemap for cells of type $or.
+Using template $paramod$c5c783b17ab1d780abfad8cfe6563a0a7b47a3b0\_90_pmux for cells of type $pmux.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $logic_and.
+No more expansions possible.
+<suppressed ~807 debug messages>
+
+23.44. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+23.45. Executing TECHMAP pass (map to technology primitives).
+
+23.45.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dff_map.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/dff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFFE_PN0P_'.
+Generating RTLIL representation for module `\$_SDFFCE_PP0P_'.
+Successfully finished Verilog frontend.
+
+23.45.2. Continuing TECHMAP pass.
+Using template \$_DFFE_PN0P_ for cells of type $_DFFE_PN0P_.
+No more expansions possible.
+<suppressed ~2334 debug messages>
+
+23.46. Executing OPT pass (performing simple optimizations).
+
+23.46.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+<suppressed ~3935 debug messages>
+
+23.46.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+<suppressed ~42 debug messages>
+Removed a total of 14 cells.
+
+23.46.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+23.46.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.46.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.46.6. Executing OPT_SHARE pass.
+
+23.46.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.46.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+Removed 1 unused cells and 15661 unused wires.
+<suppressed ~2 debug messages>
+
+23.46.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.46.10. Rerunning OPT passes. (Maybe there is more to do..)
+
+23.46.11. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+23.46.12. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.46.13. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.46.14. Executing OPT_SHARE pass.
+
+23.46.15. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.46.16. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+
+23.46.17. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.46.18. Finished OPT passes. (There is nothing left to do.)
+Removed 0 unused cells and 10 unused wires.
+
+23.47. Executing TECHMAP pass (map to technology primitives).
+
+23.47.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/abc9_map.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/abc9_map.v' to AST representation.
+Generating RTLIL representation for module `\MISTRAL_FF'.
+Successfully finished Verilog frontend.
+
+23.47.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~15 debug messages>
+
+23.48. Executing ABC9 pass.
+
+23.48.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+23.48.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+23.48.3. Executing SCC pass (detecting logic loops).
+Found 0 SCCs in module mod_mul.
+Found 0 SCCs.
+
+23.48.4. Executing ABC9_OPS pass (helper functions for ABC9).
+
+23.48.5. Executing PROC pass (convert processes to netlists).
+
+23.48.5.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+23.48.5.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+23.48.5.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+23.48.5.4. Executing PROC_INIT pass (extract init attributes).
+
+23.48.5.5. Executing PROC_ARST pass (detect async resets in processes).
+
+23.48.5.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+23.48.5.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+23.48.5.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+23.48.5.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+23.48.5.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+23.48.5.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+23.48.5.12. Executing OPT_EXPR pass (perform const folding).
+
+23.48.6. Executing TECHMAP pass (map to technology primitives).
+
+23.48.6.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+23.48.6.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~120 debug messages>
+
+23.48.7. Executing OPT pass (performing simple optimizations).
+
+23.48.7.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module MISTRAL_FF.
+
+23.48.7.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\MISTRAL_FF'.
+Removed a total of 0 cells.
+
+23.48.7.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \MISTRAL_FF..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+23.48.7.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \MISTRAL_FF.
+Performed a total of 0 changes.
+
+23.48.7.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\MISTRAL_FF'.
+Removed a total of 0 cells.
+
+23.48.7.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.48.7.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \MISTRAL_FF..
+
+23.48.7.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module MISTRAL_FF.
+
+23.48.7.9. Finished OPT passes. (There is nothing left to do.)
+
+23.48.8. Executing TECHMAP pass (map to technology primitives).
+
+23.48.8.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/abc9_map.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/abc9_map.v' to AST representation.
+Successfully finished Verilog frontend.
+
+23.48.8.2. Continuing TECHMAP pass.
+Using template MISTRAL_FF for cells of type MISTRAL_FF.
+No more expansions possible.
+<suppressed ~2334 debug messages>
+
+23.48.9. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/abc9_model.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/abc9_model.v' to AST representation.
+Generating RTLIL representation for module `$__ABC9_DELAY'.
+Generating RTLIL representation for module `$__ABC9_SCC_BREAKER'.
+Generating RTLIL representation for module `$__DFF_N__$abc9_flop'.
+Generating RTLIL representation for module `$__DFF_P__$abc9_flop'.
+Successfully finished Verilog frontend.
+
+23.48.10. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~2 debug messages>
+
+23.48.11. Executing ABC9_OPS pass (helper functions for ABC9).
+
+23.48.12. Executing ABC9_OPS pass (helper functions for ABC9).
+<suppressed ~2 debug messages>
+
+23.48.13. Executing TECHMAP pass (map to technology primitives).
+
+23.48.13.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+23.48.13.2. Continuing TECHMAP pass.
+Using template $paramod\MISTRAL_ALUT_ARITH\LUT0=16'1010101010101010\LUT1=16'1100001111000011 for cells of type $paramod\MISTRAL_ALUT_ARITH\LUT0=16'1010101010101010\LUT1=16'1100001111000011.
+Using template $paramod\MISTRAL_ALUT_ARITH\LUT0=16'1010101010101010\LUT1=16'0000000000000000 for cells of type $paramod\MISTRAL_ALUT_ARITH\LUT0=16'1010101010101010\LUT1=16'0000000000000000.
+Using template $paramod$constmap:debecbbf3717e0f4c680abc85cfc533019b210d7$paramod$e31da3c1e7d1078ed1477dabeabe646dcd7d3c9b\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shr.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'0
+  Constant input on bit 1 of port A: 1'0
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'0
+  Constant input on bit 6 of port A: 1'0
+  Constant input on bit 7 of port A: 1'0
+  Constant input on bit 8 of port A: 1'0
+  Constant input on bit 9 of port A: 1'0
+  Constant input on bit 10 of port A: 1'0
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'0
+  Constant input on bit 14 of port A: 1'0
+  Constant input on bit 15 of port A: 1'0
+Creating constmapped module `$paramod$constmap:da78d05fe2a90a9c124545790c51474a3466d748$paramod$e31da3c1e7d1078ed1477dabeabe646dcd7d3c9b\_90_shift_ops_shr_shl_sshl_sshr'.
+
+23.48.13.8. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:da78d05fe2a90a9c124545790c51474a3466d748$paramod$e31da3c1e7d1078ed1477dabeabe646dcd7d3c9b\_90_shift_ops_shr_shl_sshl_sshr..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~426 debug messages>
+
+23.48.13.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:da78d05fe2a90a9c124545790c51474a3466d748$paramod$e31da3c1e7d1078ed1477dabeabe646dcd7d3c9b\_90_shift_ops_shr_shl_sshl_sshr.
+<suppressed ~192 debug messages>
+Removed 0 unused cells and 16 unused wires.
+Using template $paramod$constmap:da78d05fe2a90a9c124545790c51474a3466d748$paramod$e31da3c1e7d1078ed1477dabeabe646dcd7d3c9b\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shr.
+Using extmapper simplemap for cells of type $logic_not.
+Running "alumacc" on wrapper $extern:wrap:$add:Y_WIDTH=2:B_WIDTH=2:A_WIDTH=1:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:Y_WIDTH=2:B_WIDTH=2:A_WIDTH=1:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:Y_WIDTH=2:B_WIDTH=2:A_WIDTH=1:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Running "alumacc" on wrapper $extern:wrap:$add:Y_WIDTH=2:B_WIDTH=1:A_WIDTH=2:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Using template $extern:wrap:$add:Y_WIDTH=2:B_WIDTH=1:A_WIDTH=2:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47 for cells of type $extern:wrap:$add:Y_WIDTH=2:B_WIDTH=1:A_WIDTH=2:B_SIGNED=0:A_SIGNED=0:394426c56d1a028ba8fdd5469b163e04011def47.
+Analyzing pattern of constant bits for this cell:
+  Constant input on bit 0 of port A: 1'1
+  Constant input on bit 1 of port A: 1'1
+  Constant input on bit 2 of port A: 1'0
+  Constant input on bit 3 of port A: 1'0
+  Constant input on bit 4 of port A: 1'0
+  Constant input on bit 5 of port A: 1'0
+  Constant input on bit 6 of port A: 1'1
+  Constant input on bit 7 of port A: 1'1
+  Constant input on bit 8 of port A: 1'1
+  Constant input on bit 9 of port A: 1'1
+  Constant input on bit 10 of port A: 1'0
+  Constant input on bit 11 of port A: 1'0
+  Constant input on bit 12 of port A: 1'0
+  Constant input on bit 13 of port A: 1'0
+  Constant input on bit 14 of port A: 1'1
+  Constant input on bit 15 of port A: 1'1
+Creating constmapped module `$paramod$constmap:56b8783ba577858eda421dc9a52b6c51029bfb42$paramod$e31da3c1e7d1078ed1477dabeabe646dcd7d3c9b\_90_shift_ops_shr_shl_sshl_sshr'.
+
+23.48.13.14. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module $paramod$constmap:56b8783ba577858eda421dc9a52b6c51029bfb42$paramod$e31da3c1e7d1078ed1477dabeabe646dcd7d3c9b\_90_shift_ops_shr_shl_sshl_sshr..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+<suppressed ~35 debug messages>
+
+23.48.13.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod$constmap:56b8783ba577858eda421dc9a52b6c51029bfb42$paramod$e31da3c1e7d1078ed1477dabeabe646dcd7d3c9b\_90_shift_ops_shr_shl_sshl_sshr.
+<suppressed ~147 debug messages>
+Removed 0 unused cells and 12 unused wires.
+Using template $paramod$constmap:56b8783ba577858eda421dc9a52b6c51029bfb42$paramod$e31da3c1e7d1078ed1477dabeabe646dcd7d3c9b\_90_shift_ops_shr_shl_sshl_sshr for cells of type $shr.
+Using template $paramod$175e67c02b86e96b1288b9dc100122520d7240d8\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $not.
+Using extmapper simplemap for cells of type $pos.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000010 for cells of type $lcu.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $xor.
+Using extmapper simplemap for cells of type $or.
+No more expansions possible.
+<suppressed ~182 debug messages>
+
+23.48.14. Executing OPT pass (performing simple optimizations).
+
+23.48.14.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+<suppressed ~48 debug messages>
+
+23.48.14.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+<suppressed ~219 debug messages>
+Removed a total of 73 cells.
+
+23.48.14.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+23.48.14.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.48.14.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.48.14.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.48.14.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+Removed 60 unused cells and 186 unused wires.
+<suppressed ~61 debug messages>
+
+23.48.14.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+<suppressed ~1 debug messages>
+
+23.48.14.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+23.48.14.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+23.48.14.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.48.14.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.48.14.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.48.14.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+23.48.14.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.48.14.16. Rerunning OPT passes. (Maybe there is more to do..)
+
+23.48.14.17. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \mod_mul..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+23.48.14.18. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \mod_mul.
+Performed a total of 0 changes.
+
+23.48.14.19. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.48.14.20. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.48.14.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+
+23.48.14.22. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.48.14.23. Finished OPT passes. (There is nothing left to do.)
+
+23.48.15. Executing AIGMAP pass (map logic to AIG).
+Module mod_mul: replaced 6 cells with 42 new cells, skipped 30 cells.
+  replaced 2 cell types:
+       5 $_XOR_
+       1 $_MUX_
+  not replaced 3 cell types:
+      24 $specify2
+       3 $_NOT_
+       3 $_AND_
+
+23.48.16. Executing AIGMAP pass (map logic to AIG).
+Module mod_mul: replaced 2908 cells with 20161 new cells, skipped 13222 cells.
+  replaced 3 cell types:
+      65 $_OR_
+    1547 $_XOR_
+    1296 $_MUX_
+  not replaced 6 cell types:
+    1325 $_NOT_
+    4133 $_AND_
+      10 $paramod\MISTRAL_ALUT_ARITH\LUT0=16'1010101010101010\LUT1=16'0000000000000000
+    2330 MISTRAL_FF
+    3094 $paramod\MISTRAL_ALUT_ARITH\LUT0=16'1010101010101010\LUT1=16'1100001111000011
+    2330 MISTRAL_FF_$abc9_byp
+
+23.48.16.1. Executing ABC9_OPS pass (helper functions for ABC9).
+
+23.48.16.2. Executing ABC9_OPS pass (helper functions for ABC9).
+
+23.48.16.3. Executing XAIGER backend.
+<suppressed ~2341 debug messages>
+Extracted 12727 AND gates and 38035 wires from module `mod_mul' to a netlist network with 3101 inputs and 2597 outputs.
+
+23.48.16.4. Executing ABC9_EXE pass (technology mapping using ABC9).
+
+23.48.16.5. Executing ABC9.
+Running ABC command: "<yosys-exe-dir>/yosys-abc" -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_lut <abc-temp-dir>/input.lut 
+ABC: + read_box <abc-temp-dir>/input.box 
+ABC: + &read <abc-temp-dir>/input.xaig 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =   3101/   2597  and =   12166  lev =   19 (0.47)  mem = 0.71 MB  box = 5434  bb = 2330
+ABC: + &scorr 
+ABC: Warning: The network is combinational.
+ABC: + &sweep 
+ABC: + &dc2 
+ABC: + &dch -f 
+ABC: + &ps 
+ABC: <abc-temp-dir>/input : i/o =   3101/   2597  and =   15135  lev =   16 (0.44)  mem = 0.75 MB  ch =  753  box = 5434  bb = 2330
+ABC: + &if -W 600 -v 
+ABC: K = 6. Memory (bytes): Truth =    0. Cut =   56. Obj =  136. Set =  600. CutMin = no
+ABC: Node =   15135.  Ch =   749.  Total mem =    7.63 MB. Peak cut mem =    0.25 MB.
+ABC: P:  Del = 15292.00.  Ar =    4466.0.  Edge =    13477.  Cut =   111986.  T =     0.02 sec
+ABC: P:  Del = 15292.00.  Ar =    4577.0.  Edge =    13930.  Cut =   117874.  T =     0.02 sec
+ABC: P:  Del = 15292.00.  Ar =    3852.0.  Edge =    10926.  Cut =   126130.  T =     0.02 sec
+ABC: F:  Del = 15292.00.  Ar =    3735.0.  Edge =    10783.  Cut =   127710.  T =     0.03 sec
+ABC: A:  Del = 15292.00.  Ar =    3711.0.  Edge =    10776.  Cut =   124706.  T =     0.05 sec
+ABC: A:  Del = 15292.00.  Ar =    3711.0.  Edge =    10775.  Cut =   122831.  T =     0.03 sec
+ABC: Total time =     0.17 sec
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + &mfs 
+ABC: + &ps -l 
+ABC: <abc-temp-dir>/input : i/o =   3101/   2597  and =   11095  lev =   21 (0.53)  mem = 0.70 MB  box = 5434  bb = 2330
+ABC: Mapping (K=6)  :  lut =   3286  edge =   10125  lev =   10 (0.28)  levB =  263  mem = 0.25 MB
+ABC: LUT = 3286 : 2=1820 55.4 %  3=265 8.1 %  4=594 18.1 %  5=328 10.0 %  6=279 8.5 %  Ave = 3.08
+ABC: + &write -n <abc-temp-dir>/output.aig 
+ABC: + time 
+ABC: elapse: 1.76 seconds, total: 1.76 seconds
+
+23.48.16.6. Executing AIGER frontend.
+<suppressed ~11408 debug messages>
+Removed 15703 unused cells and 55037 unused wires.
+
+23.48.16.7. Executing ABC9_OPS pass (helper functions for ABC9).
+ABC RESULTS:              $lut cells:     3286
+ABC RESULTS:   $paramod\MISTRAL_ALUT_ARITH\LUT0=16'1010101010101010\LUT1=16'0000000000000000 cells:       10
+ABC RESULTS:   $paramod\MISTRAL_ALUT_ARITH\LUT0=16'1010101010101010\LUT1=16'1100001111000011 cells:     3094
+ABC RESULTS:   \MISTRAL_FF_$abc9_byp cells:     2330
+ABC RESULTS:           input signals:     2336
+ABC RESULTS:          output signals:       30
+Removing temp directory.
+
+23.48.17. Executing TECHMAP pass (map to technology primitives).
+
+23.48.17.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/abc9_unmap.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `\$__DFF_x__$abc9_flop'.
+Generating RTLIL representation for module `\$__ABC9_SCC_BREAKER'.
+Successfully finished Verilog frontend.
+
+23.48.17.2. Continuing TECHMAP pass.
+Using template MISTRAL_FF_$abc9_byp for cells of type MISTRAL_FF_$abc9_byp.
+Using template $paramod\MISTRAL_ALUT_ARITH\LUT0=16'1010101010101010\LUT1=16'0000000000000000 for cells of type $paramod\MISTRAL_ALUT_ARITH\LUT0=16'1010101010101010\LUT1=16'0000000000000000.
+Using template $paramod\MISTRAL_ALUT_ARITH\LUT0=16'1010101010101010\LUT1=16'1100001111000011 for cells of type $paramod\MISTRAL_ALUT_ARITH\LUT0=16'1010101010101010\LUT1=16'1100001111000011.
+No more expansions possible.
+<suppressed ~5443 debug messages>
+
+23.49. Executing TECHMAP pass (map to technology primitives).
+
+23.49.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/abc9_unmap.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/abc9_unmap.v' to AST representation.
+Generating RTLIL representation for module `\$__MISTRAL_FF_SYNCONLY'.
+Successfully finished Verilog frontend.
+
+23.49.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+23.50. Executing TECHMAP pass (map to technology primitives).
+
+23.50.1. Executing Verilog-2005 frontend: /tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/alm_map.v
+Parsing Verilog input from `/tmp/tinysign-yosys/usr/bin/../share/yosys/intel_alm/common/alm_map.v' to AST representation.
+Generating RTLIL representation for module `\$lut'.
+Successfully finished Verilog frontend.
+
+23.50.2. Continuing TECHMAP pass.
+Using template $paramod$8d7a8d6e3356de09670738ba85f2c6b874f6b06d\$lut for cells of type $lut.
+Using template $paramod$a6597eda4608f36e684c1dd07ed552fcbec112b2\$lut for cells of type $lut.
+Using template $paramod$992bdc10cff2c6edd722994f0e1044bc863f79f7\$lut for cells of type $lut.
+Using template $paramod$fedcddf7a4357754b8c2c1b3c873f3560b924a39\$lut for cells of type $lut.
+Using template $paramod$b86b68a00733dbecb31d58a14a13683475a2002a\$lut for cells of type $lut.
+Using template $paramod$f056b3cf42701dfc7f540d463578d46c622fe830\$lut for cells of type $lut.
+Using template $paramod$65d5d5c1e01bf41ee659754efba932f3d99198e5\$lut for cells of type $lut.
+Using template $paramod$571404c0889eaf57f492cb5e37f8acb5df5852f9\$lut for cells of type $lut.
+Using template $paramod$504c9f1ca6facbed70a8a05210386b24177f23fe\$lut for cells of type $lut.
+Using template $paramod$e6049326c8634f79a905c381bb150ca718b543fa\$lut for cells of type $lut.
+Using template $paramod$251994398653c4cf8de320f1e306e535d5d2d624\$lut for cells of type $lut.
+Using template $paramod$43779580bfffd5d5a9f321249a174febf1dac288\$lut for cells of type $lut.
+Using template $paramod$df196ed0a1da5c4a58c5e08a1dac304fd3fccaab\$lut for cells of type $lut.
+Using template $paramod$8be96b63cc324d0992c8dbded44c01f3877cc4ea\$lut for cells of type $lut.
+Using template $paramod$bd5942fd536119edcfd4dccdf5c7abb5434027e2\$lut for cells of type $lut.
+Using template $paramod$2d07c1a6c53c7b878509360922c4fa5ebedc3011\$lut for cells of type $lut.
+Using template $paramod$f45429e380905f064bb0bad3a8bdb941708e63a7\$lut for cells of type $lut.
+Using template $paramod$865e8a35808a486a7d87271c9a563444e3e5ff54\$lut for cells of type $lut.
+Using template $paramod$e2d8e390f5b3f61fa0e36276a9fb12356ed7b604\$lut for cells of type $lut.
+Using template $paramod$f44e1eab45e047e709d5dfed32527eb1f7745488\$lut for cells of type $lut.
+Using template $paramod$59073c995cc777939802fc411d7b608c30e84105\$lut for cells of type $lut.
+Using template $paramod$2382b0dd4cb27fd4312681c40a6dd179c2a7a26a\$lut for cells of type $lut.
+Using template $paramod$70884a30bfc0d7804a3d01e42fa480246b2f83f1\$lut for cells of type $lut.
+Using template $paramod$a4db78afbb066dcc410895b55a74e971042d7ca6\$lut for cells of type $lut.
+Using template $paramod$8a8a8418764695479a69225d863df43297e927e6\$lut for cells of type $lut.
+Using template $paramod$e797b9494d8d6d9ff1471af3704bc861966a1458\$lut for cells of type $lut.
+Using template $paramod$65837b0c9e38c4bd57135cd0d5db216e15aae875\$lut for cells of type $lut.
+Using template $paramod$e66e8fb4dfc5e58275e78db94678ed4a8566ca3b\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
+Using template $paramod$5e9d3eb0100057e1337ebfc9520360f8c39ef83b\$lut for cells of type $lut.
+Using template $paramod$c44c45c5460e16e4bb754ea160dfe67ad2dd4c95\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0010 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0100 for cells of type $lut.
+Using template $paramod$51cce02b2a01962e0fbde95e8a0da29ad626a585\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00100000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0001 for cells of type $lut.
+Using template $paramod$f0bdd96985292457b414c1402f5fa7272e1410a4\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000001 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1110 for cells of type $lut.
+Using template $paramod$ef3c091323a84a78d729201d2e6359e2b30ccdb8\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001110 for cells of type $lut.
+Using template $paramod$acd70f9ad376390c7f0397502c1185d62be2e4f9\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00000111 for cells of type $lut.
+Using template $paramod$923dcce08caf6566907491e53d81680cb3c74b4c\$lut for cells of type $lut.
+Using template $paramod$2ce5faaff11b9c6335ab770f2f2f66f832ed5277\$lut for cells of type $lut.
+Using template $paramod$559d8f61325f7b4ee17556605f88d95718b41383\$lut for cells of type $lut.
+Using template $paramod$8adf7fbd410d2cc654c288d5be5f7508ee8809b0\$lut for cells of type $lut.
+Using template $paramod$33e58adf67c6b686a154c9ce8ebbc4b04b8cabc5\$lut for cells of type $lut.
+Using template $paramod$5bc4b34d04423f5c10a1f36d396093524460bd02\$lut for cells of type $lut.
+Using template $paramod$74805ba68abb78073a11ad3f518215b6f11cf0e9\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10101100 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'10010000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11111000 for cells of type $lut.
+Using template $paramod$ff4f83f7fac6187836c052954020133dbc5dc41f\$lut for cells of type $lut.
+Using template $paramod$ad80742393e2a7bdcac873194a7904ee752612f1\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001011 for cells of type $lut.
+Using template $paramod$d74f27ecdfbf562ce0161f824cec9778b19ee549\$lut for cells of type $lut.
+Using template $paramod$f0f2bbe458fa0e6d251b5beeb9d8405c808b9896\$lut for cells of type $lut.
+Using template $paramod$7afde302ddf552f0fb7d1a62db4a89eaf7d351f0\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01110000 for cells of type $lut.
+Using template $paramod$9c06ed3676feff7aca2f0d1ed77a26ec223656c4\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'11010000 for cells of type $lut.
+No more expansions possible.
+<suppressed ~4608 debug messages>
+
+23.51. Executing OPT pass (performing simple optimizations).
+
+23.51.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module mod_mul.
+
+23.51.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\mod_mul'.
+Removed a total of 0 cells.
+
+23.51.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.51.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \mod_mul..
+Removed 512 unused cells and 100628 unused wires.
+<suppressed ~530 debug messages>
+
+23.51.5. Finished fast OPT passes.
+
+23.52. Executing AUTONAME pass.
+Renamed 5980526 objects in module mod_mul (2287 iterations).
+<suppressed ~16549 debug messages>
+
+23.53. Executing HIERARCHY pass (managing design hierarchy).
+
+23.53.1. Analyzing design hierarchy..
+Top module:  \mod_mul
+
+23.53.2. Analyzing design hierarchy..
+Top module:  \mod_mul
+Removed 0 unused modules.
+
+23.54. Printing statistics.
+
+=== mod_mul ===
+
+   Number of wires:               7840
+   Number of wire bits:          16371
+   Number of public wires:        7840
+   Number of public wire bits:   16371
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               8721
+     MISTRAL_ALUT2                1821
+     MISTRAL_ALUT3                 265
+     MISTRAL_ALUT4                 594
+     MISTRAL_ALUT5                 328
+     MISTRAL_ALUT6                 279
+     MISTRAL_ALUT_ARITH           3104
+     MISTRAL_FF                   2330
+
+23.55. Executing CHECK pass (checking for obvious problems).
+Checking module mod_mul...
+Found and reported 0 problems.
+
+24. Executing CHECK pass (checking for obvious problems).
+Checking module mod_mul...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.33 (git sha1 2584903a060)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\mod_mul": {
+         "num_wires":         7840,
+         "num_wire_bits":     16371,
+         "num_pub_wires":     7840,
+         "num_pub_wire_bits": 16371,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8721,
+         "num_cells_by_type": {
+            "MISTRAL_ALUT2": 1821,
+            "MISTRAL_ALUT3": 265,
+            "MISTRAL_ALUT4": 594,
+            "MISTRAL_ALUT5": 328,
+            "MISTRAL_ALUT6": 279,
+            "MISTRAL_ALUT_ARITH": 3104,
+            "MISTRAL_FF": 2330
+         }
+      }
+   },
+      "design": {
+         "num_wires":         7840,
+         "num_wire_bits":     16371,
+         "num_pub_wires":     7840,
+         "num_pub_wire_bits": 16371,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8721,
+         "num_cells_by_type": {
+            "MISTRAL_ALUT2": 1821,
+            "MISTRAL_ALUT3": 265,
+            "MISTRAL_ALUT4": 594,
+            "MISTRAL_ALUT5": 328,
+            "MISTRAL_ALUT6": 279,
+            "MISTRAL_ALUT_ARITH": 3104,
+            "MISTRAL_FF": 2330
+         }
+      }
+}
+
+25. Executing JSON backend.

@@ -1,0 +1,154 @@
+{
+  "timestamp_utc": "2026-10-08T13:03:16.247170+00:00",
+  "scope": "targeted shared-ECC refactor regression",
+  "hardware_test": "not_run",
+  "quartus": {
+    "fit": "successful",
+    "device": "5CSEBA6U23I7",
+    "alms_needed": 27853,
+    "alms_final_placement": 32834,
+    "labs_occupied": 3971,
+    "available_alms": 41910,
+    "available_labs": 4191,
+    "registers": 45242,
+    "fit_clock_mhz": 50,
+    "initial_timing_50mhz": "failed; setup slack -5.006 ns",
+    "timing_reanalysis_clock_mhz": 25,
+    "timing_25mhz": "internal constrained paths pass at all four corners; board I/O remains unconstrained",
+    "worst_setup_slack_ns": 14.994,
+    "worst_hold_slack_ns": 0.113,
+    "sdc_changed_after_fit": true,
+    "physical_clock_generation": "not implemented; supply 25 MHz clock at integration",
+    "board_pin_assignments": "not implemented",
+    "sof": "quartus/puri_sign/output_files/TinySign.sof"
+  },
+  "tests": [
+    {
+      "name": "python_reference",
+      "status": "pass",
+      "log": "python_reference.log",
+      "tool": "python3",
+      "checks": 9
+    },
+    {
+      "name": "hmac_rfc6979",
+      "status": "pass",
+      "log": "nonce.log",
+      "tool": "Icarus Verilog 12.0",
+      "checks": [
+        "PASS: HMAC-SHA-256 RFC 4231 test case 2",
+        "PASS: HMAC-SHA-256 97-byte RFC 6979 inner vector",
+        "PASS: RFC 6979 P-256 SHA-256 nonce (1519 cycles)",
+        "PASS: RFC6979 repeats same k for same key and digest",
+        "PASS: RFC 6979 rejects zero private key"
+      ]
+    },
+    {
+      "name": "tb_tinysign_core",
+      "status": "pass",
+      "log": "rtl.log",
+      "tool": "Icarus Verilog 12.0",
+      "checks": [
+        "PASS: register-controlled provisioning, lock, and ECDSA signature readback",
+        "PASS: zeroize interrupts signing and clears register-visible and internal signer state",
+        "PASS: key manager rejects incomplete provisioning",
+        "PASS: key manager rejects out-of-range private key"
+      ]
+    },
+    {
+      "name": "tb_shared_engines",
+      "status": "pass",
+      "log": "verilator_shared.log",
+      "tool": "Verilator 5.020",
+      "checks": [
+        "PASS: shared ECC derives RFC6979 public key after aborted provisioning",
+        "PASS: register-controlled provisioning, lock, and ECDSA signature readback",
+        "PASS: repeated shared-engine signature, fixed 7437840 cycle latency",
+        "PASS: zeroize during scalar and inverse, busy rejection, no stale completion, reprovision recovery"
+      ]
+    },
+    {
+      "name": "tb_key_manager",
+      "status": "pass",
+      "log": "verilator_tb_key_manager.log",
+      "tool": "Verilator 5.020",
+      "checks": [
+        "PASS: key manager rejects incomplete provisioning",
+        "PASS: key manager rejects out-of-range private key",
+        "PASS: protected key provisioning and public-key derivation (7303704 cycles)",
+        "PASS: locked key rejects overwrite",
+        "PASS: key manager zeroize clears secret and public state"
+      ]
+    },
+    {
+      "name": "tb_ecdsa_signer",
+      "status": "pass",
+      "log": "verilator_tb_ecdsa_signer.log",
+      "tool": "Verilator 5.020",
+      "checks": [
+        "PASS: ECDSA P-256 RFC 6979 signature vector (7437838 cycles)",
+        "PASS: ECDSA signer rejects zero private key"
+      ]
+    },
+    {
+      "name": "tb_tinysign_de10nano",
+      "status": "pass",
+      "log": "verilator_tb_tinysign_de10nano.log",
+      "tool": "Verilator 5.020",
+      "checks": [
+        "PASS: DE10-Nano Avalon-MM shell elaboration, status read, command write and byte enables"
+      ]
+    }
+  ],
+  "notes": [
+    "The Icarus combined run passed tb_tinysign_core, then was stopped during tb_key_manager; standalone tests completed under Verilator.",
+    "The additional Icarus tb_shared_engines run was stopped after the identical test completed under Verilator."
+  ],
+  "sha256": {
+    "rtl/arithmetic/mod_add.v": "46b5d77fe044db9ed5f577db8b357321494dcc25dd19fd0066732b72a41969e6",
+    "rtl/arithmetic/mod_inv.v": "05498ec7d7c50117d297238a147e21065503e58fb940d82a3ccfa77ebb553e7f",
+    "rtl/arithmetic/mod_mul.v": "4e3ddf56ee8140ab2d11422020c48a8ab89daa26d9a8928c765888897f22eb33",
+    "rtl/arithmetic/mod_sub.v": "d3cd859be2b30136372e6ee9b584bcb83c3e052cd0eb751bda175d3e0e94500c",
+    "rtl/arithmetic/montgomery_mul.v": "1c47d63c7f4def50afe3c9215d5bc7f1b2de28fa952a8f21d9cef9ea366940b7",
+    "rtl/ec/point_add.v": "fc40d09991d68b2568459482faa9e7ae6def15005d679b06a05f346a555d9d74",
+    "rtl/ec/point_double.v": "da77e76d8dd86705f3e86ef2fad24e802ebe912335fbce288e41622c73af4dfd",
+    "rtl/ec/point_ops.v": "26e9a67871aac29e7a5de8196ecf12527d44eb9787692fa90bf96be5a06310e2",
+    "rtl/ecdsa/ecdsa_signer.v": "814d95dedf5f7a71733f6958b3712192100def66bb22d8459d44d5a34d2c2aea",
+    "rtl/ecdsa/scalar_mult.v": "6e472aca618d38c3743637e290f9d0d20a0facdc72174512e7f8c31f9467b806",
+    "rtl/nonce/hmac_sha256.v": "561b09d486814ef27c529e86486423a14068925fde7c4f505be4959d13c1a6c0",
+    "rtl/nonce/rfc6979.v": "e1ea5dbfc6f4adb23cad5806970348c4670903b1aa57bd89331ef4268a5171eb",
+    "rtl/platform/tinysign_de10nano.v": "2cdd3e526933f8fb73edfc10f7965e0bd3a04d30b56f37466ec28d49d4ed7c1e",
+    "rtl/platform/tinysign_de10nano_selftest.v": "fcb405cba189644ff08c8d146ae2cb722c738926e458c83a8dc8a2bc18975086",
+    "rtl/security/key_manager.v": "a680edd0de896f87e30b5cf86e891af37c852683d480fa9632318f45836c6949",
+    "rtl/security/tinysign_core.v": "90443854b8935c7ee259a601c0a16e08399eec95102d70a1f59347d7884f8759",
+    "rtl/sha256/sha256_compress.v": "fd9a42fe74caedbfcf9f8e733811978e5e2f580d94a6106c172f87f234b3514e",
+    "rtl/sha256/sha256_hash.v": "a550cb5789bc126eadcff4faea546b45490052002fc6b6e0332a6872160be58e",
+    "rtl/test_support/selftest_uart_report.v": "fffa1f18712be6b667c00db8d92b1f1dd98282b9a9f1c32b885349aba3fb2c3c",
+    "rtl/test_support/tinysign_board_selftest.v": "bf2b6367a6beca452a439debf743d116ef620f3f6e2de43a34dfa09fb7dbbd2c",
+    "rtl/test_support/uart_tx.v": "2a49c3760d251560032e20cea3b2c1d8916d0d7e014fe9571845f62a07263eb5",
+    "tb/tb_board_selftest.v": "63f0a8698f76063c2c1029bfda5a50ff94f0d8aa9068133c7d6f60d046074551",
+    "tb/tb_ecdsa_signer.v": "6163201bf7d5acd4bc62e1ac4d2d3a4248de7daf31af16cd376b26be903cfd26",
+    "tb/tb_hmac.v": "d8c0041f2f57a7d5b836fa3d176b1b4eb26c2b8709579422a83fd6e3270d3156",
+    "tb/tb_key_manager.v": "c651245fc0ee07e975b0375bc374111997e764957e98209cf6dc6be45d53e5ac",
+    "tb/tb_mod_arith.v": "971f4b2cf62e62cff05c0525942e1473ce830fa28c1ce383853fc7e5cdf61696",
+    "tb/tb_montgomery_mul.v": "a2761c4e0834136ed1d0610bbf6276d4c9aeb48334cb940fab399fdf4a99297f",
+    "tb/tb_montgomery_wave.v": "b93497cf5b611b6ff869a3cd054c0274d2cca2e300c20dca092738ce4a9e1631",
+    "tb/tb_point_ops.v": "ae8a3c09b329be6d98004be57d5f405e239f17a52cae89313a69808caeca2c4e",
+    "tb/tb_python_mod_arith.v": "2a98479a531d8375eff8320bfeb05be7270e3bf2ffed26737a24dca4652c8a1c",
+    "tb/tb_rfc6979.v": "9bc55b519f501a23a09a8cb07fa46de7814457eb0d25427f21b62b507cccc1f2",
+    "tb/tb_scalar_mult.v": "c5056bce91914229cf6d46322b4ffe1e337130d047cf0d2bc07955339a101b2d",
+    "tb/tb_selftest_uart.v": "7bc9d40226555876f4fe080e04e13f5ac9ab9aa8d0183cfc7a953edaedb2116f",
+    "tb/tb_sha256_hash.v": "a2236d266d8b0dd9fa86909fb83fc34f0f808a450e1591cf30e6d9c90ec15c20",
+    "tb/tb_shared_engines.v": "cc88a1d97412ebe04ab4bdb9174c1d4e69754300adf6bba05fff9c6c4b058d27",
+    "tb/tb_tinysign_core.v": "925b9a76f506dd83b65213372d17e4c9c81a846d7fd35fb53382b4726dc5f711",
+    "tb/tb_tinysign_de10nano.v": "f0763b89ad532fb35d1c43331b3429fc1780f84fc305d2b90cd162640ba65dcb",
+    "quartus/puri_sign/TinySign.qsf": "fe1c702c89aea1f69098cfceab0005a4a714b07e8413cffa79a65d6e878bf034",
+    "quartus/puri_sign/TinySign.sdc": "3b37a275e05e0ad1143704fcae055f7a8b023f534b16b16eadbae80903f73289"
+  },
+  "artifact_sha256": {
+    "quartus/puri_sign/output_files/TinySign.sof": "075729daa38fa09b22ac775dd3cfdcb896bbb875e04d2fdc78dd52afde298d46",
+    "quartus/puri_sign/output_files/TinySign.fit.rpt": "47225ac4f6c26cce26aa26bbebecfbecebb66e5907434746036e3d5e053d7f8b",
+    "quartus/puri_sign/output_files/TinySign.sta.rpt": "b69ff5991969436c2bdf9992428a9e9f374bfeb508e55f2283532754b8dc2bec",
+    "reports/puri_sign/timing_50mhz.sta.rpt": "19ad5c10dc32ae43ecbc7d33bef324c1b9df5f68b6ecf36a02e6e7d5d64d3b59"
+  }
+}

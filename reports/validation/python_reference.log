@@ -1,0 +1,14 @@
+test_fail_packet (test_board_packet.BoardPacketTests.test_fail_packet) ... ok
+test_pass_packet (test_board_packet.BoardPacketTests.test_pass_packet) ... ok
+test_reject_corrupt_or_inconsistent (test_board_packet.BoardPacketTests.test_reject_corrupt_or_inconsistent) ... ok
+test_bad_inputs_are_rejected (test_p256.P256ReferenceTests.test_bad_inputs_are_rejected) ... ok
+test_curve_parameters_and_group_edges (test_p256.P256ReferenceTests.test_curve_parameters_and_group_edges) ... ok
+test_jacobian_point_operation_vectors (test_p256.P256ReferenceTests.test_jacobian_point_operation_vectors) ... ok
+test_rfc6979_p256_public_key_and_signature (test_p256.P256ReferenceTests.test_rfc6979_p256_public_key_and_signature) ... ok
+test_rfc6979_p256_sha256_nonce (test_p256.P256ReferenceTests.test_rfc6979_p256_sha256_nonce) ... ok
+test_verifier_rejects_modified_digest_and_invalid_signature (test_p256.P256ReferenceTests.test_verifier_rejects_modified_digest_and_invalid_signature) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.065s
+
+OK

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="1072.8pt" viewBox="0 0 864 1072.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T21:06:24.678323</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 1072.8 
+L 864 1072.8 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 237.6 169.2 
+L 237.6 208.8 
+" clip-path="url(#p1098e58398)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 237.6 171.196436 
+Q 237.6 188.999832 237.6 205.461588 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 240.2 200.261588 
+L 237.6 205.461588 
+L 235 200.261588 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 237.6 280.8 
+L 237.6 320.4 
+" clip-path="url(#p1098e58398)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 237.6 282.796436 
+Q 237.6 300.599832 237.6 317.061588 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 240.2 311.861588 
+L 237.6 317.061588 
+L 235 311.861588 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 237.6 392.4 
+L 237.6 432 
+" clip-path="url(#p1098e58398)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 237.6 394.396436 
+Q 237.6 412.199832 237.6 428.661588 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 240.2 423.461588 
+L 237.6 428.661588 
+L 235 423.461588 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 237.6 504 
+L 237.6 543.6 
+" clip-path="url(#p1098e58398)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 237.6 505.996436 
+Q 237.6 523.799832 237.6 540.261588 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 240.2 535.061588 
+L 237.6 540.261588 
+L 235 535.061588 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 237.6 615.6 
+L 237.6 655.2 
+" clip-path="url(#p1098e58398)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 237.6 617.596436 
+Q 237.6 635.399832 237.6 651.861588 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 240.2 646.661588 
+L 237.6 651.861588 
+L 235 646.661588 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 56.88 108 
+L 418.32 108 
+Q 424.8 108 424.8 114.48 
+L 424.8 162.72 
+Q 424.8 169.2 418.32 169.2 
+L 56.88 169.2 
+Q 50.4 169.2 50.4 162.72 
+L 50.4 114.48 
+Q 50.4 108 56.88 108 
+z
+" clip-path="url(#p1098e58398)" style="fill: #fceded; stroke: #b65050; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 56.88 208.8 
+L 418.32 208.8 
+Q 424.8 208.8 424.8 215.28 
+L 424.8 274.32 
+Q 424.8 280.8 418.32 280.8 
+L 56.88 280.8 
+Q 50.4 280.8 50.4 274.32 
+L 50.4 215.28 
+Q 50.4 208.8 56.88 208.8 
+z
+" clip-path="url(#p1098e58398)" style="fill: #fceded; stroke: #b65050; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 56.88 320.4 
+L 418.32 320.4 
+Q 424.8 320.4 424.8 326.88 
+L 424.8 385.92 
+Q 424.8 392.4 418.32 392.4 
+L 56.88 392.4 
+Q 50.4 392.4 50.4 385.92 
+L 50.4 326.88 
+Q 50.4 320.4 56.88 320.4 
+z
+" clip-path="url(#p1098e58398)" style="fill: #fceded; stroke: #b65050; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 56.88 432 
+L 418.32 432 
+Q 424.8 432 424.8 438.48 
+L 424.8 497.52 
+Q 424.8 504 418.32 504 
+L 56.88 504 
+Q 50.4 504 50.4 497.52 
+L 50.4 438.48 
+Q 50.4 432 56.88 432 
+z
+" clip-path="url(#p1098e58398)" style="fill: #fceded; stroke: #b65050; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 56.88 543.6 
+L 418.32 543.6 
+Q 424.8 543.6 424.8 550.08 
+L 424.8 609.12 
+Q 424.8 615.6 418.32 615.6 
+L 56.88 615.6 
+Q 50.4 615.6 50.4 609.12 
+L 50.4 550.08 
+Q 50.4 543.6 56.88 543.6 
+z
+" clip-path="url(#p1098e58398)" style="fill: #e8f5ef; stroke: #25816c; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 237.6 655.2 
+C 287.24602 655.2 334.865352 657.665572 369.970389 662.053701 
+C 405.075427 666.441831 424.8 672.394247 424.8 678.6 
+C 424.8 684.805753 405.075427 690.758169 369.970389 695.146299 
+C 334.865352 699.534428 287.24602 702 237.6 702 
+C 187.95398 702 140.334648 699.534428 105.229611 695.146299 
+C 70.124573 690.758169 50.4 684.805753 50.4 678.6 
+C 50.4 672.394247 70.124573 666.441831 105.229611 662.053701 
+C 140.334648 657.665572 187.95398 655.2 237.6 655.2 
+z
+" clip-path="url(#p1098e58398)" style="fill: #e8f5ef; stroke: #25816c; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 524.88 118.8 
+L 807.12 118.8 
+Q 813.6 118.8 813.6 125.28 
+L 813.6 198.72 
+Q 813.6 205.2 807.12 205.2 
+L 524.88 205.2 
+Q 518.4 205.2 518.4 198.72 
+L 518.4 125.28 
+Q 518.4 118.8 524.88 118.8 
+z
+" clip-path="url(#p1098e58398)" style="fill: #fff4dc; stroke: #b68125; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 524.88 241.2 
+L 807.12 241.2 
+Q 813.6 241.2 813.6 247.68 
+L 813.6 321.12 
+Q 813.6 327.6 807.12 327.6 
+L 524.88 327.6 
+Q 518.4 327.6 518.4 321.12 
+L 518.4 247.68 
+Q 518.4 241.2 524.88 241.2 
+z
+" clip-path="url(#p1098e58398)" style="fill: #fff4dc; stroke: #b68125; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 524.88 363.6 
+L 807.12 363.6 
+Q 813.6 363.6 813.6 370.08 
+L 813.6 443.52 
+Q 813.6 450 807.12 450 
+L 524.88 450 
+Q 518.4 450 518.4 443.52 
+L 518.4 370.08 
+Q 518.4 363.6 524.88 363.6 
+z
+" clip-path="url(#p1098e58398)" style="fill: #fff4dc; stroke: #b68125; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 524.88 486 
+L 807.12 486 
+Q 813.6 486 813.6 492.48 
+L 813.6 565.92 
+Q 813.6 572.4 807.12 572.4 
+L 524.88 572.4 
+Q 518.4 572.4 518.4 565.92 
+L 518.4 492.48 
+Q 518.4 486 524.88 486 
+z
+" clip-path="url(#p1098e58398)" style="fill: #f2f5f8; stroke: #7c8c9b; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 524.88 608.4 
+L 807.12 608.4 
+Q 813.6 608.4 813.6 614.88 
+L 813.6 688.32 
+Q 813.6 694.8 807.12 694.8 
+L 524.88 694.8 
+Q 518.4 694.8 518.4 688.32 
+L 518.4 614.88 
+Q 518.4 608.4 524.88 608.4 
+z
+" clip-path="url(#p1098e58398)" style="fill: #f2f5f8; stroke: #7c8c9b; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 56.88 763.2 
+L 807.12 763.2 
+Q 813.6 763.2 813.6 769.68 
+L 813.6 853.92 
+Q 813.6 860.4 807.12 860.4 
+L 56.88 860.4 
+Q 50.4 860.4 50.4 853.92 
+L 50.4 769.68 
+Q 50.4 763.2 56.88 763.2 
+z
+" clip-path="url(#p1098e58398)" style="fill: #eaf2fc; stroke: #3973a8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 56.88 892.8 
+L 807.12 892.8 
+Q 813.6 892.8 813.6 899.28 
+L 813.6 983.52 
+Q 813.6 990 807.12 990 
+L 56.88 990 
+Q 50.4 990 50.4 983.52 
+L 50.4 899.28 
+Q 50.4 892.8 56.88 892.8 
+z
+" clip-path="url(#p1098e58398)" style="fill: #f2f5f8; stroke: #7c8c9b; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 20.16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #243746" x="38.16" y="39.16665" transform="rotate(-0 38.16 39.16665)">Kontrol | ZEROIZE, status, dan penolakan akses</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #243746" x="38.16" y="75.7386" transform="rotate(-0 38.16 75.7386)">ZEROIZE adalah pengecualian saat busy; perintah harus ditulis dengan byte_enable = 0xF.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9.36px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #243746" x="38.16" y="1052.953088" transform="rotate(-0 38.16 1052.953088)">PURI-Sign | Berdasarkan RTL shared-engine, 8 Oktober 2026 | Diagram alur, bukan timing fisik</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(164.5551 132.8769)">HOST: CMD_ZEROIZE = 5</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(108.9927 150.4188)">Dapat dikirim saat idle maupun operasi aktif</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(163.9602 230.5386)">Core memicu key_zeroize</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(116.3025 247.8186)">Pindah ke ZEROIZE_WAIT → owner dilepas</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(119.2617 265.0986)">Hapus digest dan r/s core; sign_valid = 0</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(125.3241 342.2988)">Reset shared scalar / inverse / multiply</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(162.3906 359.5788)">Clear signer dan RFC6979</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(105.1911 376.8588)">Batalkan pekerjaan yang sedang berlangsung</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(115.1577 453.7386)">key_manager membersihkan staging, key,</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(146.3994 471.1788)">public key dan state sementara</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(107.9145 488.2986)">key_valid = 0; key_locked = 0; key_done = 1</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(163.8099 565.3386)">Core menerima key_done</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(124.2648 582.6186)">done_latch = 1; busy = 0; zeroized = 1</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(199.7541 601.1748)">Kembali IDLE</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #243746" x="237.6" y="681.7788" transform="rotate(-0 237.6 681.7788)">Host dapat melakukan provisioning baru</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(599.9121 140.2731)">BUS WRITE SAAT BUSY</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(547.605 156.3786)">Selain CMD_ZEROIZE → error_code 0x03.</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(584.8569 173.8188)">Operasi aktif tetap berjalan;</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(549.5517 191.0988)">penolakan write tidak membatalkannya.</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(598.3623 262.1448)">BYTE ENABLE / ALAMAT</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(563.9787 278.9388)">Write harus satu word penuh (0xF).</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(543.9582 296.2188)">Byte enable salah / alamat tidak didukung</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(610.5609 313.3386)">→ error_code 0x04.</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(585.2088 384.6204)">ERROR PERINTAH / OPERASI</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(542.0727 401.3388)">0x01: command / prasyarat key tidak valid</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(556.7193 418.4586)">0x02: key_manager atau signer gagal</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(569.6244 435.8988)">Status error harus diperiksa host.</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(563.3604 506.2986)">CMD_CLEAR_STATUS = 6 (saat idle)</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(549.0063 523.5786)">Hapus done/error/error_code, sign_valid,</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(562.3569 541.0188)">dan zeroized. Tidak menghapus key</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(581.0247 558.2988)">atau isi register signature r/s.</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(613.9377 629.8731)">REGISTER STATUS</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(564.3468 645.9786)">ready, busy, done, error, key_valid,</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(574.3503 663.2586)">key_locked, sign_valid, zeroized</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(576.5607 680.6988)">Readback key selalu bernilai 0.</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(327.4299 789.1533)">URUTAN PADA TRACE RTL @ 25 MHz</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(171.693 806.1786)">T0: perintah diterima, key_zeroize aktif, shared engine berhenti dan sign_valid core turun.</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(298.7928 823.4586)">T0 + 1 siklus: key_valid dan key_locked turun.</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(254.6505 840.8988)">T0 + 2 siklus: core menyelesaikan ZEROIZE dan kembali idle.</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(384.9408 919.6731)">BATAS DIAGRAM</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(127.4499 935.9388)">Ini alur perilaku RTL yang tersedia, bukan klaim sertifikasi secure element atau ketahanan serangan fisik.</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(140.355 953.2188)">Reset/clear logika tidak membuktikan waktu penghapusan fisik. Latensi di atas berasal dari simulasi.</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(177.1056 970.4988)">Integrasi clock 25 MHz, pin board, dan host tetap mengikuti batas implementasi proyek.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p1098e58398">
+   <rect x="0" y="0" width="864" height="1072.8"/>
+  </clipPath>
+ </defs>
+</svg>

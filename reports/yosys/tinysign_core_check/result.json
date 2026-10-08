@@ -1,0 +1,33 @@
+{
+  "top": "tinysign_core",
+  "mode": "check",
+  "timestamp_utc": "2026-10-07T09:03:15.503226+00:00",
+  "sources_sha256": {
+    "rtl/arithmetic/mod_add.v": "46b5d77fe044db9ed5f577db8b357321494dcc25dd19fd0066732b72a41969e6",
+    "rtl/arithmetic/mod_inv.v": "05498ec7d7c50117d297238a147e21065503e58fb940d82a3ccfa77ebb553e7f",
+    "rtl/arithmetic/mod_mul.v": "4e3ddf56ee8140ab2d11422020c48a8ab89daa26d9a8928c765888897f22eb33",
+    "rtl/arithmetic/mod_sub.v": "d3cd859be2b30136372e6ee9b584bcb83c3e052cd0eb751bda175d3e0e94500c",
+    "rtl/arithmetic/montgomery_mul.v": "1c47d63c7f4def50afe3c9215d5bc7f1b2de28fa952a8f21d9cef9ea366940b7",
+    "rtl/ec/point_add.v": "fc40d09991d68b2568459482faa9e7ae6def15005d679b06a05f346a555d9d74",
+    "rtl/ec/point_double.v": "da77e76d8dd86705f3e86ef2fad24e802ebe912335fbce288e41622c73af4dfd",
+    "rtl/ec/point_ops.v": "b1243417900ee00f75d66e5decd5297d72dd218c9b31547850452e4392e867e2",
+    "rtl/ecdsa/ecdsa_signer.v": "1972155d8b5ba665766b3bb2accee9ef35d24cc316b0a28062319f7fdb97ef12",
+    "rtl/ecdsa/scalar_mult.v": "6e472aca618d38c3743637e290f9d0d20a0facdc72174512e7f8c31f9467b806",
+    "rtl/nonce/hmac_sha256.v": "561b09d486814ef27c529e86486423a14068925fde7c4f505be4959d13c1a6c0",
+    "rtl/nonce/rfc6979.v": "e1ea5dbfc6f4adb23cad5806970348c4670903b1aa57bd89331ef4268a5171eb",
+    "rtl/platform/tinysign_de10nano.v": "2cdd3e526933f8fb73edfc10f7965e0bd3a04d30b56f37466ec28d49d4ed7c1e",
+    "rtl/platform/tinysign_de10nano_selftest.v": "fefc10950efed6acc4d062a5a1983e9a65e20ad930b84b29329fa54da2244e75",
+    "rtl/security/key_manager.v": "bf0d0bb9c4acc1b68ff86b56d534f75be5346e1feeee8501fe12cf02695859c4",
+    "rtl/security/tinysign_core.v": "5a12307554763f7d694612b6562cc1faa2b040a0744fcdf8afc10372b47711de",
+    "rtl/sha256/sha256_compress.v": "fd9a42fe74caedbfcf9f8e733811978e5e2f580d94a6106c172f87f234b3514e",
+    "rtl/sha256/sha256_hash.v": "a550cb5789bc126eadcff4faea546b45490052002fc6b6e0332a6872160be58e",
+    "rtl/test_support/selftest_uart_report.v": "fffa1f18712be6b667c00db8d92b1f1dd98282b9a9f1c32b885349aba3fb2c3c",
+    "rtl/test_support/tinysign_board_selftest.v": "3a1313a3d26e69721e3c2b54afc8d0342b6b4bd326055a51a59f92e4be71ca20",
+    "rtl/test_support/uart_tx.v": "2a49c3760d251560032e20cea3b2c1d8916d0d7e014fe9571845f62a07263eb5"
+  },
+  "implementation": "not_run",
+  "hardware": "not_run",
+  "tool": "Yosys 0.33 (git sha1 2584903a060)",
+  "status": "pass",
+  "exit_code": 0
+}

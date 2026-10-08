@@ -1,0 +1,3 @@
+PASS: ECDSA P-256 RFC 6979 signature vector (7437838 cycles)
+PASS: ECDSA signer rejects zero private key
+- tb/tb_ecdsa_signer.v:24: Verilog $finish

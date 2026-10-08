@@ -1,0 +1,4 @@
+METRIC,simulation,provision,7303706
+METRIC,simulation,sign,7437840
+PASS: synthesizable board selftest, public key/signature/lock/readback/in-flight zeroize
+tb/tb_board_selftest.v:48: $finish called at 294876940000 (1ps)

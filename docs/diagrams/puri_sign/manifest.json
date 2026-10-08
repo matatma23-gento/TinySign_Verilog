@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "01 Alur utama",
+    "02 Provisioning",
+    "03 Signing ECDSA",
+    "04 Engine bersama",
+    "05 Zeroize dan error"
+  ],
+  "source_sha256": {
+    "rtl/security/tinysign_core.v": "90443854b8935c7ee259a601c0a16e08399eec95102d70a1f59347d7884f8759",
+    "rtl/security/key_manager.v": "a680edd0de896f87e30b5cf86e891af37c852683d480fa9632318f45836c6949",
+    "rtl/ecdsa/ecdsa_signer.v": "814d95dedf5f7a71733f6958b3712192100def66bb22d8459d44d5a34d2c2aea"
+  },
+  "preview_method": "Offline render from the same graph geometry; not a draw.io application screenshot."
+}

@@ -1,0 +1,21 @@
+/home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v:59: warning: @* is sensitive to all 64 words in array 'w'.
+/home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v:60: warning: @* is sensitive to all 64 words in array 'w'.
+/home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v:60: warning: @* is sensitive to all 64 words in array 'w'.
+/home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v:60: warning: @* is sensitive to all 64 words in array 'w'.
+/home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v:60: warning: @* is sensitive to all 64 words in array 'w'.
+PASS: register-controlled provisioning, lock, and ECDSA signature readback
+PASS: zeroize interrupts signing and clears register-visible and internal signer state
+/home/mateus/Documents/Peruri/TinySign_Verilog/tb/tb_tinysign_core.v:53: $finish called at 147415993000 (1ps)
+/home/mateus/Documents/Peruri/TinySign_Verilog/tb/tb_key_manager.v:13: warning: Instantiating module key_manager with dangling input port 19 (engine_px) floating.
+/home/mateus/Documents/Peruri/TinySign_Verilog/tb/tb_key_manager.v:13: warning: Instantiating module key_manager with dangling input port 20 (engine_py) floating.
+/home/mateus/Documents/Peruri/TinySign_Verilog/tb/tb_key_manager.v:13: warning: Instantiating module key_manager with dangling input port 21 (engine_pz) floating.
+/home/mateus/Documents/Peruri/TinySign_Verilog/tb/tb_key_manager.v:13: warning: Instantiating module key_manager with dangling input port 22 (engine_scalar_done) floating.
+/home/mateus/Documents/Peruri/TinySign_Verilog/tb/tb_key_manager.v:13: warning: Instantiating module key_manager with dangling input port 23 (engine_scalar_error) floating.
+/home/mateus/Documents/Peruri/TinySign_Verilog/tb/tb_key_manager.v:13: warning: Instantiating module key_manager with dangling input port 27 (engine_inv_result) floating.
+/home/mateus/Documents/Peruri/TinySign_Verilog/tb/tb_key_manager.v:13: warning: Instantiating module key_manager with dangling input port 28 (engine_inv_done) floating.
+/home/mateus/Documents/Peruri/TinySign_Verilog/tb/tb_key_manager.v:13: warning: Instantiating module key_manager with dangling input port 29 (engine_inv_error) floating.
+/home/mateus/Documents/Peruri/TinySign_Verilog/tb/tb_key_manager.v:13: warning: Instantiating module key_manager with dangling input port 34 (engine_mul_result) floating.
+/home/mateus/Documents/Peruri/TinySign_Verilog/tb/tb_key_manager.v:13: warning: Instantiating module key_manager with dangling input port 35 (engine_mul_done) floating.
+/home/mateus/Documents/Peruri/TinySign_Verilog/tb/tb_key_manager.v:13: warning: Instantiating module key_manager with dangling input port 36 (engine_mul_error) floating.
+PASS: key manager rejects incomplete provisioning
+PASS: key manager rejects out-of-range private key

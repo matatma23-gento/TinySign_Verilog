@@ -1,0 +1,139 @@
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_scalar_start'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+                     ... For warning description see https://verilator.org/warn/PINMISSING?v=5.020
+                     ... Use "/* verilator lint_off PINMISSING */" and lint_on around source to disable this message.
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_scalar'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_px'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_py'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_pz'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_scalar_done'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_scalar_error'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_inv_start'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_inv_a'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_inv_modulus'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_inv_result'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_inv_done'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_inv_error'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_mul_start'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_mul_a'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_mul_b'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_mul_modulus'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_mul_result'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_mul_done'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-PINMISSING: tb/tb_key_manager.v:13:17: Cell has missing pin: 'engine_mul_error'
+   13 |     key_manager dut(.clk(clk),.rst_n(rst_n),.zeroize(zeroize),.key_word_write(key_word_write),.key_word_index(key_word_index),.key_word_data(key_word_data),
+      |                 ^~~
+%Warning-WIDTHTRUNC: rtl/security/key_manager.v:51:14: Logical operator GENIF expects 1 bit on the If, but If's VARREF 'SHARED_ENGINES' generates 32 bits.
+                                                     : ... note: In instance 'tb_key_manager.dut'
+   51 |     generate if (SHARED_ENGINES) begin : g_shared
+      |              ^~
+%Warning-WIDTHEXPAND: rtl/arithmetic/montgomery_mul.v:57:36: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'round_count' generates 8 bits.
+                                                           : ... note: In instance 'tb_key_manager.dut.g_local.u_scalar.u_point_ops.u_mul.u_montgomery'
+   57 |                     if (round_count==WIDTH-1) state<=ST_REDUCE;
+      |                                    ^~
+%Warning-WIDTHEXPAND: rtl/arithmetic/mod_mul.v:60:36: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'round_count' generates 8 bits.
+                                                    : ... note: In instance 'tb_key_manager.dut.g_local.u_scalar.u_point_ops.u_mul'
+   60 |                     if (round_count==WIDTH-1) begin
+      |                                    ^~
+%Warning-WIDTHEXPAND: rtl/arithmetic/mod_add.v:32:48: Operator COND expects 257 bits on the Conditional False, but Conditional False's SEL generates 256 bits.
+                                                    : ... note: In instance 'tb_key_manager.dut.g_local.u_scalar.u_point_ops.u_add'
+   32 |                     result <= (sum >= mod_ext) ? (sum - mod_ext) : sum[WIDTH-1:0];
+      |                                                ^
+%Warning-WIDTHTRUNC: rtl/arithmetic/mod_add.v:32:28: Operator ASSIGNDLY expects 256 bits on the Assign RHS, but Assign RHS's COND generates 257 bits.
+                                                   : ... note: In instance 'tb_key_manager.dut.g_local.u_scalar.u_point_ops.u_add'
+   32 |                     result <= (sum >= mod_ext) ? (sum - mod_ext) : sum[WIDTH-1:0];
+      |                            ^~
+%Warning-WIDTHTRUNC: rtl/ecdsa/scalar_mult.v:64:54: Operator ASSIGNDLY expects 9 bits on the Assign RHS, but Assign RHS's SUB generates 32 bits.
+                                                  : ... note: In instance 'tb_key_manager.dut.g_local.u_scalar'
+   64 |                         scalar_reg<=scalar; bit_index<=WIDTH-1; op_phase<=0;
+      |                                                      ^~
+%Warning-WIDTHTRUNC: rtl/ecdsa/scalar_mult.v:78:39: Bit extraction of var[255:0] requires 8 bit index, not 9 bits.
+                                                  : ... note: In instance 'tb_key_manager.dut.g_local.u_scalar'
+   78 |                         if (scalar_reg[bit_index]==1'b0) begin
+      |                                       ^
+%Warning-WIDTHEXPAND: rtl/ecdsa/scalar_mult.v:92:40: Operator GTE expects 32 bits on the LHS, but LHS's VARREF 'slot_cycles' generates 14 bits.
+                                                   : ... note: In instance 'tb_key_manager.dut.g_local.u_scalar'
+   92 |                         if (slot_cycles>=OP_SLOT_CYCLES-1) state<=ST_COMPLETE;
+      |                                        ^~
+%Warning-WIDTHEXPAND: rtl/ecdsa/scalar_mult.v:94:45: Operator GTE expects 32 bits on the LHS, but LHS's VARREF 'slot_cycles' generates 14 bits.
+                                                   : ... note: In instance 'tb_key_manager.dut.g_local.u_scalar'
+   94 |                     end else if (slot_cycles>=OP_SLOT_CYCLES-1) begin
+      |                                             ^~
+%Warning-WIDTHEXPAND: rtl/ecdsa/scalar_mult.v:99:36: Operator GTE expects 32 bits on the LHS, but LHS's VARREF 'slot_cycles' generates 14 bits.
+                                                   : ... note: In instance 'tb_key_manager.dut.g_local.u_scalar'
+   99 |                     if (slot_cycles>=OP_SLOT_CYCLES-1) state<=ST_COMPLETE;
+      |                                    ^~
+%Warning-WIDTHTRUNC: rtl/ecdsa/scalar_mult.v:107:39: Bit extraction of var[255:0] requires 8 bit index, not 9 bits.
+                                                   : ... note: In instance 'tb_key_manager.dut.g_local.u_scalar'
+  107 |                         if (scalar_reg[bit_index]==1'b0) begin
+      |                                       ^
+%Warning-WIDTHTRUNC: rtl/ecdsa/scalar_mult.v:115:43: Bit extraction of var[255:0] requires 8 bit index, not 9 bits.
+                                                   : ... note: In instance 'tb_key_manager.dut.g_local.u_scalar'
+  115 |                             if (scalar_reg[bit_index]==1'b0) begin
+      |                                           ^
+%Warning-WIDTHEXPAND: rtl/arithmetic/mod_inv.v:56:39: Operator EQ expects 32 bits on the LHS, but LHS's VARREF 'bit_count' generates 9 bits.
+                                                    : ... note: In instance 'tb_key_manager.dut.g_local.u_inverse'
+   56 |                         if (bit_count == WIDTH-1) begin
+      |                                       ^~
+%Warning-WIDTHTRUNC: tb/tb_key_manager.v:25:28: Operator TASKREF 'write_word' expects 3 bits on the Function Argument, but Function Argument's VARREF 'i' generates 32 bits.
+                                              : ... note: In instance 'tb_key_manager'
+   25 |         for(i=1;i<8;i=i+1) write_word(i,(i==7)?32'h00000001:32'h00000000);
+      |                            ^~~~~~~~~~
+make: Entering directory '/tmp/puri-sign-tools/tb_key_manager'
+g++ -Os  -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /tmp/puri-sign-tools/verilator/usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /tmp/puri-sign-tools/verilator/usr/share/verilator/include/verilated_timing.cpp
+g++ -Os  -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_threads.o /tmp/puri-sign-tools/verilator/usr/share/verilator/include/verilated_threads.cpp
+g++ -Os  -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -x c++-header Vtb_key_manager__pch.h -o Vtb_key_manager__pch.h.fast.gch
+g++   -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -x c++-header Vtb_key_manager__pch.h -o Vtb_key_manager__pch.h.slow.gch
+echo "" > Vtb_key_manager__ALL.verilator_deplist.tmp
+g++ -Os  -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_key_manager__pch.h.fast -c -o Vtb_key_manager.o Vtb_key_manager.cpp
+g++ -Os  -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_key_manager__pch.h.fast -c -o Vtb_key_manager___024root__DepSet_hd2abdfc5__0.o Vtb_key_manager___024root__DepSet_hd2abdfc5__0.cpp
+g++ -Os  -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_key_manager__pch.h.fast -c -o Vtb_key_manager___024root__DepSet_h535b8a80__0.o Vtb_key_manager___024root__DepSet_h535b8a80__0.cpp
+g++ -Os  -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_key_manager__pch.h.fast -c -o Vtb_key_manager___024root__DepSet_h535b8a80__1.o Vtb_key_manager___024root__DepSet_h535b8a80__1.cpp
+g++ -Os  -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_key_manager__pch.h.fast -c -o Vtb_key_manager__main.o Vtb_key_manager__main.cpp
+g++   -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_key_manager__pch.h.slow -c -o Vtb_key_manager__ConstPool_0.o Vtb_key_manager__ConstPool_0.cpp
+g++   -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_key_manager__pch.h.slow -c -o Vtb_key_manager___024root__Slow.o Vtb_key_manager___024root__Slow.cpp
+g++   -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_key_manager__pch.h.slow -c -o Vtb_key_manager___024root__DepSet_hd2abdfc5__0__Slow.o Vtb_key_manager___024root__DepSet_hd2abdfc5__0__Slow.cpp
+g++   -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_key_manager__pch.h.slow -c -o Vtb_key_manager___024root__DepSet_h535b8a80__0__Slow.o Vtb_key_manager___024root__DepSet_h535b8a80__0__Slow.cpp
+g++   -I.  -MMD -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include -I/tmp/puri-sign-tools/verilator/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TRACE=0 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=0 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-overloaded-virtual -Wno-shadow -Wno-sign-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable     -DVL_TIME_CONTEXT   -fcoroutines -include Vtb_key_manager__pch.h.slow -c -o Vtb_key_manager__Syms.o Vtb_key_manager__Syms.cpp
+Archive ar -rcs Vtb_key_manager__ALL.a Vtb_key_manager.o Vtb_key_manager___024root__DepSet_hd2abdfc5__0.o Vtb_key_manager___024root__DepSet_h535b8a80__0.o Vtb_key_manager___024root__DepSet_h535b8a80__1.o Vtb_key_manager__main.o Vtb_key_manager__ConstPool_0.o Vtb_key_manager___024root__Slow.o Vtb_key_manager___024root__DepSet_hd2abdfc5__0__Slow.o Vtb_key_manager___024root__DepSet_h535b8a80__0__Slow.o Vtb_key_manager__Syms.o
+g++     verilated.o verilated_timing.o verilated_threads.o Vtb_key_manager__ALL.a    -pthread -lpthread -latomic   -o Vtb_key_manager
+rm Vtb_key_manager__ALL.verilator_deplist.tmp
+make: Leaving directory '/tmp/puri-sign-tools/tb_key_manager'

@@ -1,0 +1,157 @@
+{
+  "clock_period_ns": 40,
+  "clock_first_rising_ns": 20,
+  "signals": [
+    {
+      "name": "rst_n",
+      "width": 1,
+      "rtl": "rst_n"
+    },
+    {
+      "name": "bus_write",
+      "width": 1,
+      "rtl": "bus_write"
+    },
+    {
+      "name": "cmd",
+      "width": 3,
+      "rtl": "bus_address==0 ? bus_write_data[2:0] : 3'd0"
+    },
+    {
+      "name": "core_state",
+      "width": 3,
+      "rtl": "dut.state"
+    },
+    {
+      "name": "core_busy",
+      "width": 1,
+      "rtl": "busy"
+    },
+    {
+      "name": "done_latch",
+      "width": 1,
+      "rtl": "dut.done_latch"
+    },
+    {
+      "name": "error_latch",
+      "width": 1,
+      "rtl": "dut.error_latch"
+    },
+    {
+      "name": "key_valid",
+      "width": 1,
+      "rtl": "dut.key_valid"
+    },
+    {
+      "name": "key_locked",
+      "width": 1,
+      "rtl": "dut.key_locked"
+    },
+    {
+      "name": "sign_valid",
+      "width": 1,
+      "rtl": "dut.sign_valid"
+    },
+    {
+      "name": "provision_owner",
+      "width": 1,
+      "rtl": "dut.provision_owner"
+    },
+    {
+      "name": "sign_owner",
+      "width": 1,
+      "rtl": "dut.sign_owner"
+    },
+    {
+      "name": "provision_start",
+      "width": 1,
+      "rtl": "dut.provision_start"
+    },
+    {
+      "name": "sign_start",
+      "width": 1,
+      "rtl": "dut.sign_start"
+    },
+    {
+      "name": "zeroize",
+      "width": 1,
+      "rtl": "dut.key_zeroize"
+    },
+    {
+      "name": "key_state",
+      "width": 3,
+      "rtl": "dut.u_key_manager.state"
+    },
+    {
+      "name": "sign_state",
+      "width": 5,
+      "rtl": "dut.u_signer.state"
+    },
+    {
+      "name": "nonce_busy",
+      "width": 1,
+      "rtl": "dut.u_signer.nonce_busy"
+    },
+    {
+      "name": "nonce_done",
+      "width": 1,
+      "rtl": "dut.u_signer.nonce_done"
+    },
+    {
+      "name": "scalar_start",
+      "width": 1,
+      "rtl": "(dut.provision_owner&&dut.km_scalar_start)||(dut.sign_owner&&dut.sg_scalar_start)"
+    },
+    {
+      "name": "scalar_busy",
+      "width": 1,
+      "rtl": "dut.u_shared_scalar.busy"
+    },
+    {
+      "name": "scalar_done",
+      "width": 1,
+      "rtl": "dut.engine_scalar_done"
+    },
+    {
+      "name": "inv_start",
+      "width": 1,
+      "rtl": "(dut.provision_owner&&dut.km_inv_start)||(dut.sign_owner&&dut.sg_inv_start)"
+    },
+    {
+      "name": "inv_busy",
+      "width": 1,
+      "rtl": "dut.u_shared_inverse.busy"
+    },
+    {
+      "name": "inv_done",
+      "width": 1,
+      "rtl": "dut.engine_inv_done"
+    },
+    {
+      "name": "mul_start",
+      "width": 1,
+      "rtl": "(dut.provision_owner&&dut.km_mul_start)||(dut.sign_owner&&dut.sg_mul_start)"
+    },
+    {
+      "name": "mul_busy",
+      "width": 1,
+      "rtl": "dut.u_shared_multiply.busy"
+    },
+    {
+      "name": "mul_done",
+      "width": 1,
+      "rtl": "dut.engine_mul_done"
+    },
+    {
+      "name": "sign_done",
+      "width": 1,
+      "rtl": "dut.sign_done"
+    },
+    {
+      "name": "add_busy",
+      "width": 1,
+      "rtl": "dut.u_signer.add_busy"
+    }
+  ],
+  "capture": "Control transitions; last delta-cycle value retained per timestamp"
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.vcd
+*.fst
+*.lxt
+obj_dir/
+*.qws
+*.qsys_edit
+output_files/
+db/
+incremental_db/
+/sim/iverilog/build/

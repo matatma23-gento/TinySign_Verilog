@@ -1,0 +1,45 @@
+{
+   "creator": "Yosys 0.33 (git sha1 2584903a060)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\mod_mul": {
+         "num_wires":         7840,
+         "num_wire_bits":     16371,
+         "num_pub_wires":     7840,
+         "num_pub_wire_bits": 16371,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8721,
+         "num_cells_by_type": {
+            "MISTRAL_ALUT2": 1821,
+            "MISTRAL_ALUT3": 265,
+            "MISTRAL_ALUT4": 594,
+            "MISTRAL_ALUT5": 328,
+            "MISTRAL_ALUT6": 279,
+            "MISTRAL_ALUT_ARITH": 3104,
+            "MISTRAL_FF": 2330
+         }
+      }
+   },
+      "design": {
+         "num_wires":         7840,
+         "num_wire_bits":     16371,
+         "num_pub_wires":     7840,
+         "num_pub_wire_bits": 16371,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         8721,
+         "num_cells_by_type": {
+            "MISTRAL_ALUT2": 1821,
+            "MISTRAL_ALUT3": 265,
+            "MISTRAL_ALUT4": 594,
+            "MISTRAL_ALUT5": 328,
+            "MISTRAL_ALUT6": 279,
+            "MISTRAL_ALUT_ARITH": 3104,
+            "MISTRAL_FF": 2330
+         }
+      }
+}
+

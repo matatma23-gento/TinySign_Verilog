@@ -1,0 +1,28 @@
+# Standalone DE10-Nano self-test, public development key d=1.
+# Pin source: Terasic DE10-Nano User Manual, tables 3-5/3-7/3-8/3-10.
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name DEVICE 5CSEBA6U23I7
+set_global_assignment -name TOP_LEVEL_ENTITY tinysign_de10nano_selftest
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name SDC_FILE TinySignSelftest.sdc
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name VERILOG_FILE ../../rtl/platform/tinysign_de10nano_selftest.v
+set_global_assignment -name VERILOG_FILE ../../rtl/test_support/tinysign_board_selftest.v
+set_global_assignment -name VERILOG_FILE ../../rtl/test_support/selftest_uart_report.v
+set_global_assignment -name VERILOG_FILE ../../rtl/test_support/uart_tx.v
+set_location_assignment PIN_V11 -to {FPGA_CLK1_50}
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to {FPGA_CLK1_50}
+set_location_assignment PIN_AH17 -to {KEY0_N}
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to {KEY0_N}
+set_location_assignment PIN_W15 -to {LED[0]}
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to {LED[0]}
+set_location_assignment PIN_AA24 -to {LED[1]}
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to {LED[1]}
+set_location_assignment PIN_V16 -to {LED[2]}
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to {LED[2]}
+set_location_assignment PIN_V15 -to {LED[3]}
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to {LED[3]}
+set_location_assignment PIN_V12 -to {GPIO0_TX}
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to {GPIO0_TX}
+set_global_assignment -name LAST_QUARTUS_VERSION "20.1.0 Lite Edition"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"

@@ -1,0 +1,18 @@
+{
+  "status": "BLOCKED",
+  "timestamp_utc": "2026-10-07T10:37:54.464446+00:00",
+  "python": "3.12.3",
+  "random_seed": "0x54494e595349474e",
+  "moduli": {
+    "p": "ffffffff00000001000000000000000000000000ffffffffffffffffffffffff",
+    "n": "ffffffff00000000ffffffffffffffffbce6faada7179e84f3b9cac2fc632551"
+  },
+  "vector_count": 254,
+  "vectors": [],
+  "artifacts": {
+    "vectors": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/arithmetic_comparison/vectors.txt",
+    "icarus_log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/arithmetic_comparison/icarus.log"
+  },
+  "source_sha256": {},
+  "error": "iverilog or vvp was not found on PATH"
+}

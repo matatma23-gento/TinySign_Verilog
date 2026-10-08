@@ -1,0 +1,90 @@
+{
+  "comparison": {
+    "baseline": "Duplicated engines; failed fit on 5CSEBA6U23I7",
+    "candidate": "Shared engines; successful fit on 5CSEBA6U23I7",
+    "performance_basis": "RTL simulation cycles, normalized to same 25 MHz clock; baseline has no working DE10-Nano fit"
+  },
+  "area": {
+    "alms_needed_before": 46158,
+    "alms_needed_after": 27853,
+    "reduction_percent": 39.657264179557174,
+    "placed_alms_before": 45164,
+    "placed_alms_after": 32834,
+    "placed_alms_reduction_percent": 27.300504826853246,
+    "registers_before": 67887,
+    "registers_after": 45242,
+    "register_reduction_percent": 33.35690191052779,
+    "die_area_change_percent": 0,
+    "die_area_note": "Fixed FPGA silicon; no ASIC area estimate in mm2"
+  },
+  "performance": {
+    "baseline_sign_cycles": 7437840,
+    "candidate_sign_cycles": 7437840,
+    "baseline_cycle_log": "baseline_cycles.log",
+    "candidate_cycle_log": "../verilator_shared.log",
+    "clock_hz": 25000000,
+    "latency_ms": 297.5136,
+    "throughput_signatures_per_second": 3.3611908833747433,
+    "speedup_same_clock": 1.0,
+    "speedup_percent": 0.0,
+    "area_normalized_efficiency_ratio": 1.6572003015833123,
+    "area_normalized_efficiency_gain_percent": 65.72003015833123
+  },
+  "power": {
+    "status": "estimated, not measured",
+    "tool": "Quartus Prime Lite 20.1 Power Analyzer",
+    "clock_mhz": 25,
+    "voltage_vcc_v": 1.1,
+    "device_power_characteristics": "Typical",
+    "ambient_celsius": 25,
+    "auto_junction_celsius": 28.6,
+    "vectorless": true,
+    "input_io_default_toggle_percent": 12.5,
+    "default_toggle_percent": 12.5,
+    "simulation_activity_coverage_percent": 0,
+    "board_thermal_model": "None",
+    "hps_enabled": false,
+    "confidence": "Low: user provided insufficient toggle rate data",
+    "total_thermal_mw": 578.77,
+    "core_dynamic_mw": 150.04,
+    "core_static_mw": 413.52,
+    "io_mw": 15.22,
+    "baseline_power_available": false,
+    "architecture_power_saving_percent": null,
+    "architecture_power_saving_mw": null,
+    "conditional_energy_at_model_power_mj": 172.191946272,
+    "energy_note": "Conditional arithmetic only; no signing-specific power waveform was supplied",
+    "command": "quartus_pow TinySign -c TinySign --no_input_file --default_input_io_toggle_rate=12.5% --use_vectorless_estimation=on --write_settings_files=off",
+    "warnings": [
+      "Some nodes lack a valid clock domain: avs_read, reset_n~inputCLKENA0",
+      "Active HPS power not modeled",
+      "No board thermal model",
+      "I/O pin assignments are not board-specific"
+    ]
+  },
+  "sources_sha256": {
+    ".refactor_backup/shared_engines_20261008/baseline.fit.rpt": "a92193f08d53b242e45b315acec4e1555f62ec33aaad3c1fa6c812f7a23ccaa8",
+    "quartus/puri_sign/output_files/TinySign.fit.rpt": "47225ac4f6c26cce26aa26bbebecfbecebb66e5907434746036e3d5e053d7f8b",
+    "quartus/puri_sign/output_files/TinySign.sta.rpt": "b69ff5991969436c2bdf9992428a9e9f374bfeb508e55f2283532754b8dc2bec",
+    "reports/puri_sign/quantitative/baseline_cycles.log": "66b90c05378bb566bd6d65b6f041c4ad4683e3d9bbc9fabd52f15978b2645d23",
+    "reports/puri_sign/verilator_shared.log": "de4d60e8a147736fe52c525ea57ba03f28b62f7f175fe9303909c5bab887d550",
+    "reports/puri_sign/quantitative/power_vectorless_25mhz.rpt": "61567d8ca56bd69c81d8abd2b29ee61b5aef46a85bb2485e350ba6f072904e60",
+    "reports/puri_sign/quantitative/power_vectorless_25mhz.summary": "bc3147df2bb2bc670efe67e2d0aa5eefe27811ebfcb27c92498b6157464e71e0"
+  },
+  "future_power_sensitivity_not_measured": [
+    {
+      "assumed_dynamic_reduction_percent": 20,
+      "static_and_io_assumed_unchanged": true,
+      "saved_mw": 30.007999999999996,
+      "estimated_total_mw": 548.762,
+      "total_reduction_percent": 5.1847884306373855
+    },
+    {
+      "assumed_dynamic_reduction_percent": 40,
+      "static_and_io_assumed_unchanged": true,
+      "saved_mw": 60.01599999999999,
+      "estimated_total_mw": 518.754,
+      "total_reduction_percent": 10.369576861274771
+    }
+  ]
+}

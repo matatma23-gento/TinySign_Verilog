@@ -1,0 +1,124 @@
+{
+  "source": "Verilator RTL event trace; not hardware measurement or post-route timing",
+  "clock_period_ns": 40,
+  "provision_cycles": 7303706,
+  "sign_cycles": 7437840,
+  "provision_ms": 292.14824,
+  "sign_ms": 297.5136,
+  "zeroize_accept_ns": 589724820,
+  "stages_include_controller_handshake": true,
+  "signing_stages": [
+    {
+      "state": 0,
+      "phase": "Penerimaan / publikasi hasil",
+      "start_ns": 0,
+      "duration_cycles": 1,
+      "duration_us": 0.04
+    },
+    {
+      "state": 2,
+      "phase": "RFC6979",
+      "start_ns": 40,
+      "duration_cycles": 1521,
+      "duration_us": 60.84
+    },
+    {
+      "state": 4,
+      "phase": "Scalar kG",
+      "start_ns": 60880,
+      "duration_cycles": 7169026,
+      "duration_us": 286761.04
+    },
+    {
+      "state": 6,
+      "phase": "Inversi Z modulo p",
+      "start_ns": 286821920,
+      "duration_cycles": 132610,
+      "duration_us": 5304.4
+    },
+    {
+      "state": 8,
+      "phase": "Kuadrat Z^-1 modulo p",
+      "start_ns": 292126320,
+      "duration_cycles": 517,
+      "duration_us": 20.68
+    },
+    {
+      "state": 10,
+      "phase": "Konversi x dan pembentukan r",
+      "start_ns": 292147000,
+      "duration_cycles": 517,
+      "duration_us": 20.68
+    },
+    {
+      "state": 12,
+      "phase": "Inversi k modulo n",
+      "start_ns": 292167680,
+      "duration_cycles": 132610,
+      "duration_us": 5304.4
+    },
+    {
+      "state": 14,
+      "phase": "Perkalian r*d modulo n",
+      "start_ns": 297472080,
+      "duration_cycles": 517,
+      "duration_us": 20.68
+    },
+    {
+      "state": 16,
+      "phase": "Penjumlahan z + r*d",
+      "start_ns": 297492760,
+      "duration_cycles": 3,
+      "duration_us": 0.12
+    },
+    {
+      "state": 18,
+      "phase": "Perkalian untuk s",
+      "start_ns": 297492880,
+      "duration_cycles": 517,
+      "duration_us": 20.68
+    },
+    {
+      "state": 0,
+      "phase": "Penerimaan / publikasi hasil",
+      "start_ns": 297513560,
+      "duration_cycles": 1,
+      "duration_us": 0.04
+    }
+  ],
+  "artifacts": [
+    "01_overview.png",
+    "01_overview.svg",
+    "02_signing_detail.png",
+    "02_signing_detail.svg",
+    "03_handshake_zeroize.png",
+    "03_handshake_zeroize.svg",
+    "control_events.vcd",
+    "control_events.csv"
+  ],
+  "sha256": {
+    "rtl/nonce/rfc6979.v": "e1ea5dbfc6f4adb23cad5806970348c4670903b1aa57bd89331ef4268a5171eb",
+    "rtl/nonce/hmac_sha256.v": "561b09d486814ef27c529e86486423a14068925fde7c4f505be4959d13c1a6c0",
+    "rtl/platform/tinysign_de10nano.v": "2cdd3e526933f8fb73edfc10f7965e0bd3a04d30b56f37466ec28d49d4ed7c1e",
+    "rtl/platform/tinysign_de10nano_selftest.v": "fcb405cba189644ff08c8d146ae2cb722c738926e458c83a8dc8a2bc18975086",
+    "rtl/ec/point_double.v": "da77e76d8dd86705f3e86ef2fad24e802ebe912335fbce288e41622c73af4dfd",
+    "rtl/ec/point_ops.v": "26e9a67871aac29e7a5de8196ecf12527d44eb9787692fa90bf96be5a06310e2",
+    "rtl/ec/point_add.v": "fc40d09991d68b2568459482faa9e7ae6def15005d679b06a05f346a555d9d74",
+    "rtl/test_support/uart_tx.v": "2a49c3760d251560032e20cea3b2c1d8916d0d7e014fe9571845f62a07263eb5",
+    "rtl/test_support/tinysign_board_selftest.v": "bf2b6367a6beca452a439debf743d116ef620f3f6e2de43a34dfa09fb7dbbd2c",
+    "rtl/test_support/selftest_uart_report.v": "fffa1f18712be6b667c00db8d92b1f1dd98282b9a9f1c32b885349aba3fb2c3c",
+    "rtl/sha256/sha256_hash.v": "a550cb5789bc126eadcff4faea546b45490052002fc6b6e0332a6872160be58e",
+    "rtl/sha256/sha256_compress.v": "fd9a42fe74caedbfcf9f8e733811978e5e2f580d94a6106c172f87f234b3514e",
+    "rtl/ecdsa/scalar_mult.v": "6e472aca618d38c3743637e290f9d0d20a0facdc72174512e7f8c31f9467b806",
+    "rtl/ecdsa/ecdsa_signer.v": "814d95dedf5f7a71733f6958b3712192100def66bb22d8459d44d5a34d2c2aea",
+    "rtl/arithmetic/mod_mul.v": "4e3ddf56ee8140ab2d11422020c48a8ab89daa26d9a8928c765888897f22eb33",
+    "rtl/arithmetic/mod_inv.v": "05498ec7d7c50117d297238a147e21065503e58fb940d82a3ccfa77ebb553e7f",
+    "rtl/arithmetic/montgomery_mul.v": "1c47d63c7f4def50afe3c9215d5bc7f1b2de28fa952a8f21d9cef9ea366940b7",
+    "rtl/arithmetic/mod_add.v": "46b5d77fe044db9ed5f577db8b357321494dcc25dd19fd0066732b72a41969e6",
+    "rtl/arithmetic/mod_sub.v": "d3cd859be2b30136372e6ee9b584bcb83c3e052cd0eb751bda175d3e0e94500c",
+    "rtl/security/key_manager.v": "a680edd0de896f87e30b5cf86e891af37c852683d480fa9632318f45836c6949",
+    "rtl/security/tinysign_core.v": "90443854b8935c7ee259a601c0a16e08399eec95102d70a1f59347d7884f8759",
+    "tb/tb_puri_timing.v": "056e0bf626615588827fd8415c903cd6ec92d7d9b05be6f675408d33e69a18d9",
+    "reports/puri_sign/timing/control_events.csv": "99108281cb56a1a3b44189bf0323ec000507823c188416107685b56fc875f54f"
+  }
+}

@@ -1,0 +1,6 @@
+Python: 3.12.3
+Icarus: not found
+vvp: not found
+Vector file: /home/mateus/Documents/Peruri/TinySign_Verilog/reports/arithmetic_comparison/vectors.txt
+
+ERROR: iverilog and vvp must be on PATH

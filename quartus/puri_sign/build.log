@@ -1,0 +1,318 @@
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Thu Oct  8 19:49:42 2026
+Info: Command: quartus_sh --flow compile TinySign
+Info: Quartus(args): compile TinySign
+Info: Project Name = /home/mateus/Documents/Peruri/TinySign_Verilog/quartus/puri_sign/TinySign
+Info: Revision Name = TinySign
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Thu Oct  8 19:49:44 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TinySign -c TinySign
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_add.v
+    Info (12023): Found entity 1: mod_add File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_add.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_sub.v
+    Info (12023): Found entity 1: mod_sub File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_sub.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/montgomery_mul.v
+    Info (12023): Found entity 1: montgomery_mul File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/montgomery_mul.v Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_mul.v
+    Info (12023): Found entity 1: mod_mul File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_mul.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_inv.v
+    Info (12023): Found entity 1: mod_inv File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_inv.v Line: 3
+Warning (10335): Unrecognized synthesis attribute "ram_style" at ../../rtl/ec/point_ops.v(16) File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ec/point_ops.v Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ec/point_ops.v
+    Info (12023): Found entity 1: point_ops File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ec/point_ops.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/scalar_mult.v
+    Info (12023): Found entity 1: scalar_mult File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/scalar_mult.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v
+    Info (12023): Found entity 1: sha256_compress File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_hash.v
+    Info (12023): Found entity 1: sha256_hash File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_hash.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v
+    Info (12023): Found entity 1: hmac_sha256 File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/rfc6979.v
+    Info (12023): Found entity 1: rfc6979 File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/rfc6979.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v
+    Info (12023): Found entity 1: ecdsa_signer File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/key_manager.v
+    Info (12023): Found entity 1: key_manager File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/key_manager.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v
+    Info (12023): Found entity 1: tinysign_core File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/platform/tinysign_de10nano.v
+    Info (12023): Found entity 1: tinysign_de10nano File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/platform/tinysign_de10nano.v Line: 5
+Info (12127): Elaborating entity "tinysign_de10nano" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at tinysign_de10nano.v(22): object "unused_read" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/platform/tinysign_de10nano.v Line: 22
+Warning (10036): Verilog HDL or VHDL warning at tinysign_de10nano.v(23): object "unused_busy" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/platform/tinysign_de10nano.v Line: 23
+Info (12128): Elaborating entity "tinysign_core" for hierarchy "tinysign_core:u_core" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/platform/tinysign_de10nano.v Line: 19
+Info (10264): Verilog HDL Case Statement information at tinysign_core.v(85): all case item expressions in this case statement are onehot File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 85
+Warning (10762): Verilog HDL Case Statement warning at tinysign_core.v(129): can't check case statement for completeness because the case expression has too many possible states File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 129
+Warning (10230): Verilog HDL assignment warning at tinysign_core.v(150): truncated value with size 8 to match size of target (3) File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 150
+Info (12128): Elaborating entity "scalar_mult" for hierarchy "tinysign_core:u_core|scalar_mult:u_shared_scalar" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 45
+Warning (10230): Verilog HDL assignment warning at scalar_mult.v(64): truncated value with size 32 to match size of target (9) File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/scalar_mult.v Line: 64
+Info (12128): Elaborating entity "point_ops" for hierarchy "tinysign_core:u_core|scalar_mult:u_shared_scalar|point_ops:u_point_ops" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/scalar_mult.v Line: 46
+Info (12128): Elaborating entity "mod_add" for hierarchy "tinysign_core:u_core|scalar_mult:u_shared_scalar|point_ops:u_point_ops|mod_add:u_add" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ec/point_ops.v Line: 28
+Warning (10230): Verilog HDL assignment warning at mod_add.v(32): truncated value with size 257 to match size of target (256) File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_add.v Line: 32
+Info (12128): Elaborating entity "mod_sub" for hierarchy "tinysign_core:u_core|scalar_mult:u_shared_scalar|point_ops:u_point_ops|mod_sub:u_sub" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ec/point_ops.v Line: 29
+Info (12128): Elaborating entity "mod_mul" for hierarchy "tinysign_core:u_core|scalar_mult:u_shared_scalar|point_ops:u_point_ops|mod_mul:u_mul" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ec/point_ops.v Line: 30
+Info (12128): Elaborating entity "montgomery_mul" for hierarchy "tinysign_core:u_core|scalar_mult:u_shared_scalar|point_ops:u_point_ops|mod_mul:u_mul|montgomery_mul:u_montgomery" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_mul.v Line: 42
+Info (12128): Elaborating entity "mod_inv" for hierarchy "tinysign_core:u_core|mod_inv:u_shared_inverse" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 50
+Info (12128): Elaborating entity "mod_mul" for hierarchy "tinysign_core:u_core|mod_mul:u_shared_multiply" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 56
+Info (12128): Elaborating entity "key_manager" for hierarchy "tinysign_core:u_core|key_manager:u_key_manager" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 68
+Warning (10036): Verilog HDL or VHDL warning at key_manager.v(31): object "point_z_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/key_manager.v Line: 31
+Warning (10036): Verilog HDL or VHDL warning at key_manager.v(36): object "scalar_busy" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/key_manager.v Line: 36
+Warning (10036): Verilog HDL or VHDL warning at key_manager.v(36): object "inv_busy" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/key_manager.v Line: 36
+Warning (10036): Verilog HDL or VHDL warning at key_manager.v(36): object "mul_busy" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/key_manager.v Line: 36
+Warning (10036): Verilog HDL or VHDL warning at key_manager.v(37): object "core_rst_n" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/key_manager.v Line: 37
+Info (12128): Elaborating entity "ecdsa_signer" for hierarchy "tinysign_core:u_core|ecdsa_signer:u_signer" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 78
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(31): object "z_point_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 31
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(31): object "zinv_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 31
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(31): object "z2_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 31
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(31): object "rd_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 31
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(31): object "sum_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 31
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(35): object "py" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 35
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(36): object "scalar_busy" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 36
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(38): object "inv_busy" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 38
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(38): object "mul_busy" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 38
+Info (10264): Verilog HDL Case Statement information at ecdsa_signer.v(85): all case item expressions in this case statement are onehot File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 85
+Info (12128): Elaborating entity "rfc6979" for hierarchy "tinysign_core:u_core|ecdsa_signer:u_signer|rfc6979:u_nonce" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 43
+Info (12128): Elaborating entity "hmac_sha256" for hierarchy "tinysign_core:u_core|ecdsa_signer:u_signer|rfc6979:u_nonce|hmac_sha256:u_hmac" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/rfc6979.v Line: 22
+Warning (10036): Verilog HDL or VHDL warning at hmac_sha256.v(10): object "inner_digest" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v Line: 10
+Warning (10036): Verilog HDL or VHDL warning at hmac_sha256.v(11): object "message_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v Line: 11
+Warning (10036): Verilog HDL or VHDL warning at hmac_sha256.v(12): object "length_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v Line: 12
+Warning (10230): Verilog HDL assignment warning at hmac_sha256.v(41): truncated value with size 32 to match size of target (8) File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v Line: 41
+Info (12128): Elaborating entity "sha256_hash" for hierarchy "tinysign_core:u_core|ecdsa_signer:u_signer|rfc6979:u_nonce|hmac_sha256:u_hmac|sha256_hash:u_hash" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v Line: 21
+Warning (10230): Verilog HDL assignment warning at sha256_hash.v(45): truncated value with size 32 to match size of target (3) File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_hash.v Line: 45
+Info (12128): Elaborating entity "sha256_compress" for hierarchy "tinysign_core:u_core|ecdsa_signer:u_signer|rfc6979:u_nonce|hmac_sha256:u_hmac|sha256_hash:u_hash|sha256_compress:u_compress" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_hash.v Line: 23
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "tinysign_core:u_core|ecdsa_signer:u_signer|rfc6979:u_nonce|hmac_sha256:u_hmac|sha256_hash:u_hash|sha256_compress:u_compress|Ram0" is uninferred due to inappropriate RAM size File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v Line: 36
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "avs_waitrequest" is stuck at GND File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/platform/tinysign_de10nano.v Line: 12
+Info (17049): 19 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file /home/mateus/Documents/Peruri/TinySign_Verilog/quartus/puri_sign/output_files/TinySign.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "avs_read" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/platform/tinysign_de10nano.v Line: 9
+Info (21057): Implemented 62247 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 48 input pins
+    Info (21059): Implemented 33 output pins
+    Info (21061): Implemented 62166 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 1315 megabytes
+    Info: Processing ended: Thu Oct  8 19:56:00 2026
+    Info: Elapsed time: 00:06:16
+    Info: Total CPU time (on all processors): 00:08:56
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Thu Oct  8 19:56:02 2026
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off TinySign -c TinySign
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = TinySign
+Info: Revision = TinySign
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (119006): Selected device 5CSEBA6U23I7 for design "TinySign"
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '100'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '-40'.
+Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
+Critical Warning (169085): No exact pin location assignment(s) for 81 pins of 81 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Info (184020): Starting Fitter periphery placement operations
+Info (11178): Promoted 1 clock (1 global)
+    Info (11162): clk~inputCLKENA0 with 42351 fanout uses global clock CLKCTRL_G10
+Info (11191): Automatically promoted 2 clocks (2 global)
+    Info (11162): tinysign_core:u_core|ecdsa_signer:u_signer|core_rst_n~0CLKENA0 with 30245 fanout uses global clock CLKCTRL_G3
+        Info (12525): This signal is driven by core routing -- it may be moved during placement to reduce routing delays
+    Info (11162): reset_n~inputCLKENA0 with 3914 fanout uses global clock CLKCTRL_G11
+Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:04
+Info (176233): Starting register packing
+Info (332104): Reading SDC File: 'TinySign.sdc'
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 1 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):   20.000          clk
+Info (176235): Finished register packing
+    Extra Info (176219): No registers were packed into other blocks
+Info (11798): Fitter preparation operations ending: elapsed time is 00:01:14
+Info (170189): Fitter placement preparation operations beginning
+Info (14951): The Fitter is using Advanced Physical Optimization.
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:05:05
+Info (170191): Fitter placement operations beginning
+Info (170137): Fitter placement was successful
+Info (170192): Fitter placement operations ending: elapsed time is 00:04:07
+Info (170193): Fitter routing operations beginning
+Info (170195): Router estimated average interconnect usage is 33% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 44% of the available device resources in the region that extends from location X33_Y11 to location X44_Y22
+Info (170202): The Fitter performed an Auto Fit compilation.  No optimizations were skipped because the design's timing and routability requirements required full optimization.
+Info (170194): Fitter routing operations ending: elapsed time is 00:04:45
+Info (11888): Total time spent on timing analysis during the Fitter is 150.16 seconds.
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:01:59
+Info (144001): Generated suppressed messages file /home/mateus/Documents/Peruri/TinySign_Verilog/quartus/puri_sign/output_files/TinySign.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 2824 megabytes
+    Info: Processing ended: Thu Oct  8 20:16:04 2026
+    Info: Elapsed time: 00:20:02
+    Info: Total CPU time (on all processors): 00:51:57
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Thu Oct  8 20:16:07 2026
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off TinySign -c TinySign
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 901 megabytes
+    Info: Processing ended: Thu Oct  8 20:16:25 2026
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:18
+Info (293026): Skipped module Power Analyzer due to the assignment FLOW_ENABLE_POWER_ANALYZER
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Thu Oct  8 20:16:26 2026
+Info: Command: quartus_sta TinySign -c TinySign
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21076): High junction temperature operating condition is not set. Assuming a default value of '100'.
+Info (21076): Low junction temperature operating condition is not set. Assuming a default value of '-40'.
+Info (332104): Reading SDC File: 'TinySign.sdc'
+Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1100mV 100C Model
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -5.006
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -5.006          -10080.117 clk 
+Info (332146): Worst-case hold slack is 0.277
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.277               0.000 clk 
+Info (332146): Worst-case recovery slack is 6.720
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     6.720               0.000 clk 
+Info (332146): Worst-case removal slack is 7.086
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     7.086               0.000 clk 
+Info (332146): Worst-case minimum pulse width slack is 9.278
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.278               0.000 clk 
+Info: Analyzing Slow 1100mV -40C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Critical Warning (332148): Timing requirements not met
+    Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the Timing Analyzer.
+Info (332146): Worst-case setup slack is -3.693
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -3.693           -6234.867 clk 
+Info (332146): Worst-case hold slack is 0.203
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.203               0.000 clk 
+Info (332146): Worst-case recovery slack is 7.048
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     7.048               0.000 clk 
+Info (332146): Worst-case removal slack is 6.916
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     6.916               0.000 clk 
+Info (332146): Worst-case minimum pulse width slack is 9.142
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.142               0.000 clk 
+Info: Analyzing Fast 1100mV 100C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332146): Worst-case setup slack is 7.180
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     7.180               0.000 clk 
+Info (332146): Worst-case hold slack is 0.149
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.149               0.000 clk 
+Info (332146): Worst-case recovery slack is 12.474
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    12.474               0.000 clk 
+Info (332146): Worst-case removal slack is 3.928
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     3.928               0.000 clk 
+Info (332146): Worst-case minimum pulse width slack is 9.413
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.413               0.000 clk 
+Info: Analyzing Fast 1100mV -40C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332146): Worst-case setup slack is 9.035
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.035               0.000 clk 
+Info (332146): Worst-case hold slack is 0.113
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.113               0.000 clk 
+Info (332146): Worst-case recovery slack is 13.503
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    13.503               0.000 clk 
+Info (332146): Worst-case removal slack is 3.420
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     3.420               0.000 clk 
+Info (332146): Worst-case minimum pulse width slack is 9.415
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.415               0.000 clk 
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 2013 megabytes
+    Info: Processing ended: Thu Oct  8 20:18:11 2026
+    Info: Elapsed time: 00:01:45
+    Info: Total CPU time (on all processors): 00:05:25
+Info (293000): Quartus Prime Full Compilation was successful. 0 errors, 39 warnings
+Info (23030): Evaluation of Tcl script /home/mateus/intelFPGA_lite/20.1/quartus/common/tcl/internal/qsh_flow.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 39 warnings
+    Info: Peak virtual memory: 480 megabytes
+    Info: Processing ended: Thu Oct  8 20:18:12 2026
+    Info: Elapsed time: 00:28:30
+    Info: Total CPU time (on all processors): 01:06:40

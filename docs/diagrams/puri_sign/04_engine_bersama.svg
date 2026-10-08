@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="864pt" height="1036.8pt" viewBox="0 0 864 1036.8" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-08T21:06:24.347609</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 1036.8 
+L 864 1036.8 
+L 864 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 432 169.2 
+L 432 216 
+" clip-path="url(#p247a89fd22)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_2">
+    <path d="M 432 171.202368 
+Q 432 192.601823 432 212.659637 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 434.6 207.459637 
+L 432 212.659637 
+L 429.4 207.459637 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 432 284.4 
+L 432 309.6 
+L 216 309.6 
+L 216 338.4 
+" clip-path="url(#p247a89fd22)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 216 311.600391 
+Q 216 324.000771 216 335.059511 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 218.6 329.859511 
+L 216 335.059511 
+L 213.4 329.859511 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 432 284.4 
+L 432 309.6 
+L 648 309.6 
+L 648 338.4 
+" clip-path="url(#p247a89fd22)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 648 311.600391 
+Q 648 324.000771 648 335.059511 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 650.6 329.859511 
+L 648 335.059511 
+L 645.4 329.859511 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 378 385.2 
+L 486 385.2 
+" clip-path="url(#p247a89fd22)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 380.00061 385.2 
+Q 431.999121 385.2 482.65599 385.2 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 477.45599 382.6 
+L 482.65599 385.2 
+L 477.45599 387.8 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 216 432 
+L 216 471.6 
+L 104.4 471.6 
+L 104.4 566.64 
+L 140.4 567 
+" clip-path="url(#p247a89fd22)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 106.399512 566.659995 
+Q 122.401573 566.820016 137.06206 566.966621 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 131.888318 564.314753 
+L 137.06206 566.966621 
+L 131.836321 569.514493 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 648 432 
+L 648 471.6 
+L 759.6 471.6 
+L 759.6 566.64 
+L 723.6 567 
+" clip-path="url(#p247a89fd22)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 757.600488 566.659995 
+Q 741.598427 566.820016 726.93794 566.966621 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 732.163679 569.514493 
+L 726.93794 566.966621 
+L 732.111682 564.314753 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_7">
+    <path d="M 432 608.4 
+L 432 655.2 
+L 165.6 655.2 
+L 165.6 698.4 
+" clip-path="url(#p247a89fd22)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 165.6 657.20127 
+Q 165.6 676.801093 165.6 695.059275 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 168.2 689.859275 
+L 165.6 695.059275 
+L 163 689.859275 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_8">
+    <path d="M 432 608.4 
+L 432 655.2 
+L 432 655.2 
+L 432 698.4 
+" clip-path="url(#p247a89fd22)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 432 657.20127 
+Q 432 676.801093 432 695.059275 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 434.6 689.859275 
+L 432 695.059275 
+L 429.4 689.859275 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="line2d_9">
+    <path d="M 432 608.4 
+L 432 655.2 
+L 698.4 655.2 
+L 698.4 698.4 
+" clip-path="url(#p247a89fd22)" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 698.4 657.20127 
+Q 698.4 676.801093 698.4 695.059275 
+" style="fill: none; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+    <path d="M 701 689.859275 
+L 698.4 695.059275 
+L 695.8 689.859275 
+z
+" style="fill: #627588; stroke: #627588; stroke-width: 1.2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 172.08 108 
+L 691.92 108 
+Q 698.4 108 698.4 114.48 
+L 698.4 162.72 
+Q 698.4 169.2 691.92 169.2 
+L 172.08 169.2 
+Q 165.6 169.2 165.6 162.72 
+L 165.6 114.48 
+Q 165.6 108 172.08 108 
+z
+" clip-path="url(#p247a89fd22)" style="fill: #f2f5f8; stroke: #7c8c9b; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 128.88 216 
+L 735.12 216 
+Q 741.6 216 741.6 222.48 
+L 741.6 277.92 
+Q 741.6 284.4 735.12 284.4 
+L 128.88 284.4 
+Q 122.4 284.4 122.4 277.92 
+L 122.4 222.48 
+Q 122.4 216 128.88 216 
+z
+" clip-path="url(#p247a89fd22)" style="fill: #eaf2fc; stroke: #3973a8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 60.48 338.4 
+L 371.52 338.4 
+Q 378 338.4 378 344.88 
+L 378 425.52 
+Q 378 432 371.52 432 
+L 60.48 432 
+Q 54 432 54 425.52 
+L 54 344.88 
+Q 54 338.4 60.48 338.4 
+z
+" clip-path="url(#p247a89fd22)" style="fill: #eaf2fc; stroke: #3973a8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 492.48 338.4 
+L 803.52 338.4 
+Q 810 338.4 810 344.88 
+L 810 425.52 
+Q 810 432 803.52 432 
+L 492.48 432 
+Q 486 432 486 425.52 
+L 486 344.88 
+Q 486 338.4 492.48 338.4 
+z
+" clip-path="url(#p247a89fd22)" style="fill: #e8f5ef; stroke: #25816c; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 146.88 525.6 
+L 717.12 525.6 
+Q 723.6 525.6 723.6 532.08 
+L 723.6 601.92 
+Q 723.6 608.4 717.12 608.4 
+L 146.88 608.4 
+Q 140.4 608.4 140.4 601.92 
+L 140.4 532.08 
+Q 140.4 525.6 146.88 525.6 
+z
+" clip-path="url(#p247a89fd22)" style="fill: #f0ebfa; stroke: #8260a7; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 53.28 698.4 
+L 277.92 698.4 
+Q 284.4 698.4 284.4 704.88 
+L 284.4 781.92 
+Q 284.4 788.4 277.92 788.4 
+L 53.28 788.4 
+Q 46.8 788.4 46.8 781.92 
+L 46.8 704.88 
+Q 46.8 698.4 53.28 698.4 
+z
+" clip-path="url(#p247a89fd22)" style="fill: #eaf2fc; stroke: #3973a8; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 319.68 698.4 
+L 544.32 698.4 
+Q 550.8 698.4 550.8 704.88 
+L 550.8 781.92 
+Q 550.8 788.4 544.32 788.4 
+L 319.68 788.4 
+Q 313.2 788.4 313.2 781.92 
+L 313.2 704.88 
+Q 313.2 698.4 319.68 698.4 
+z
+" clip-path="url(#p247a89fd22)" style="fill: #f0ebfa; stroke: #8260a7; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 586.08 698.4 
+L 810.72 698.4 
+Q 817.2 698.4 817.2 704.88 
+L 817.2 781.92 
+Q 817.2 788.4 810.72 788.4 
+L 586.08 788.4 
+Q 579.6 788.4 579.6 781.92 
+L 579.6 704.88 
+Q 579.6 698.4 586.08 698.4 
+z
+" clip-path="url(#p247a89fd22)" style="fill: #f0ebfa; stroke: #8260a7; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 53.28 842.4 
+L 810.72 842.4 
+Q 817.2 842.4 817.2 848.88 
+L 817.2 929.52 
+Q 817.2 936 810.72 936 
+L 53.28 936 
+Q 46.8 936 46.8 929.52 
+L 46.8 848.88 
+Q 46.8 842.4 53.28 842.4 
+z
+" clip-path="url(#p247a89fd22)" style="fill: #fff4dc; stroke: #b68125; stroke-width: 1.1; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 20.16px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #243746" x="38.16" y="39.16665" transform="rotate(-0 38.16 39.16665)">Arsitektur | Dua controller, satu kelompok engine</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #243746" x="38.16" y="75.8988" transform="rotate(-0 38.16 75.8988)">Pemilihan owner mengikuti FSM perintah core; provisioning dan signing tidak berjalan bersamaan.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9.36px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #243746" x="38.16" y="1016.953088" transform="rotate(-0 38.16 1016.953088)">PURI-Sign | Berdasarkan RTL shared-engine, 8 Oktober 2026 | Diagram alur, bukan timing fisik</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(321.8886 133.1388)">HOST / antarmuka register Avalon-MM</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(277.8327 150.4188)">CMD, STATUS, key input, digest, public key, signature</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(352.1196 244.5786)">tinysign_core: FSM perintah</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(237.4335 261.7569)">IDLE → PROVISION_WAIT / LOCK_WAIT / SIGN_WAIT / ZEROIZE_WAIT</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(177.147 362.2986)">key_manager</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(122.0328 379.7388)">Staging key → validasi → Q = dG</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(105.0561 397.0188)">Penyimpanan private key + public key</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(151.245 414.0369)">SHARED_ENGINES = 1</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(610.4016 362.2986)">ecdsa_signer</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(537.2838 379.5786)">RFC6979 / HMAC-SHA-256 + mod_add</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(580.5144 397.5471)">Urutan ECDSA; hasil r,s</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(583.245 414.0369)">SHARED_ENGINES = 1</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.08px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #243746" x="386.64" y="369.51795" transform="rotate(-0 386.64 369.51795)">d internal</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(292.9068 552.8988)">Pemilih operand / start dan pemilah done / error</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(286.1865 570.0186)">provision_owner atau sign_owner berasal dari FSM</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(261.3321 587.4588)">Respons selesai/error hanya diteruskan kepada owner aktif</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(120.2526 729.1386)">1 × scalar_mult</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(133.0524 747.6948)">dG atau kG</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(113.9175 763.6986)">point_ops internal</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(395.5158 729.1386)">1 × mod_inv</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(357.1776 746.5788)">Z⁻¹ mod p atau k⁻¹ mod n</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(356.8743 764.9748)">Aritmetika internal sendiri</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(622.791 729.1386)">1 × mod_mul di level core</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(643.0212 747.6948)">Konversi affine dan</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(650.0547 763.8588)">perkalian ECDSA</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(361.1799 866.4021)">JUMLAH FISIK HIERARKIS</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(301.5396 883.6038)">Scalar engine: 2 → 1  |  Inverse engine: 2 → 1</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(190.1205 900.8586)">Total mod_mul seluruh hierarki: 8 → 4 (bukan hanya satu multiplier di seluruh chip).</text>
+    <text style="font-size: 11.52px; font-family: 'DejaVu Sans'; fill: #243746" transform="translate(155.331 918.2988)">RFC6979 / HMAC sejak awal berada pada signer; tidak dihitung sebagai duplikasi yang dihapus.</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 10.08px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #243746" x="52.56" y="972.98145" transform="rotate(-0 52.56 972.98145)">Panah menunjukkan jalur request / pemakaian. Hasil engine kembali melalui pemilah respons pada blok tengah.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p247a89fd22">
+   <rect x="0" y="0" width="864" height="1036.8"/>
+  </clipPath>
+ </defs>
+</svg>

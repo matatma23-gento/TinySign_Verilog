@@ -1,0 +1,3 @@
+PASS: register-controlled provisioning, lock, and ECDSA signature readback
+PASS: zeroize interrupts active shared scalar and clears state
+- tb/tb_puri_timing.v:110: Verilog $finish

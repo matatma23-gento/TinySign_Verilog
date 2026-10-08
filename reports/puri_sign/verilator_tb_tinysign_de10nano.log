@@ -1,0 +1,2 @@
+PASS: DE10-Nano Avalon-MM shell elaboration, status read, command write and byte enables
+- tb/tb_tinysign_de10nano.v:20: Verilog $finish

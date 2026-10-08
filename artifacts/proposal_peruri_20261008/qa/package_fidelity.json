@@ -1,0 +1,15 @@
+{
+  "original_sha256": "44618d00adb0bb25e647392200d773ac85fa8586c9a02877332da785d1b47b0f",
+  "intended_modified_parts": [
+    "word/document.xml",
+    "[Content_Types].xml",
+    "word/_rels/document.xml.rels"
+  ],
+  "restored_original_parts": [
+    "word/numbering.xml",
+    "word/settings.xml",
+    "word/styles.xml",
+    "_rels/.rels"
+  ],
+  "removed_original_parts": []
+}

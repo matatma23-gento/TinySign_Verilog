@@ -1,0 +1,6 @@
+PASS: key manager rejects incomplete provisioning
+PASS: key manager rejects out-of-range private key
+PASS: protected key provisioning and public-key derivation (7303704 cycles)
+PASS: locked key rejects overwrite
+PASS: key manager zeroize clears secret and public state
+- tb/tb_key_manager.v:44: Verilog $finish

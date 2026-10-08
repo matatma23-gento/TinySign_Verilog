@@ -1,0 +1,5 @@
+METRIC: provision_cycles=7303706
+METRIC: sign_cycles=7437840
+PASS: register-controlled provisioning, lock, and ECDSA signature readback
+PASS: zeroize interrupts signing and clears register-visible and internal signer state
+- /home/mateus/Documents/Peruri/TinySign_Verilog/reports/puri_sign/quantitative/tb_baseline_cycles.v:53: Verilog $finish

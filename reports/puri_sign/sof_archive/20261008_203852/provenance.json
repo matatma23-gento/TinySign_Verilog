@@ -1,0 +1,9 @@
+{
+  "reason": "Preserve previous assembly before regenerating SOF",
+  "files_sha256": {
+    "TinySign.fit.summary": "d82ab52f11cf2fb322fc2969748871a998f29bef41770e9fb7ed750674a2fed9",
+    "TinySign.sta.summary": "ff0e53783971c0f46b82286a301b9005ca65cee3fb604f179a3c3c151340c225",
+    "TinySign.asm.rpt": "4d3fb24d1e62d8bf5ee1a0d8f141c8fff71378148d98908b7e563b1d74fb1ec0",
+    "TinySign.sof": "075729daa38fa09b22ac775dd3cfdcb896bbb875e04d2fdc78dd52afde298d46"
+  }
+}

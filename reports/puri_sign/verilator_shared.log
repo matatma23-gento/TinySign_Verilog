@@ -1,0 +1,5 @@
+PASS: shared ECC derives RFC6979 public key after aborted provisioning
+PASS: register-controlled provisioning, lock, and ECDSA signature readback
+PASS: repeated shared-engine signature, fixed 7437840 cycle latency
+PASS: zeroize during scalar and inverse, busy rejection, no stale completion, reprovision recovery
+- tb/tb_shared_engines.v:98: Verilog $finish

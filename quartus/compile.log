@@ -1,0 +1,103 @@
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Wed Oct  7 21:09:41 2026
+Info: Command: quartus_sh --flow compile TinySign
+Info: Quartus(args): compile TinySign
+Info: Project Name = /home/mateus/Documents/Peruri/TinySign_Verilog/quartus/TinySign
+Info: Revision Name = TinySign
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Wed Oct  7 21:09:44 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TinySign -c TinySign
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_add.v
+    Info (12023): Found entity 1: mod_add File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_add.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_sub.v
+    Info (12023): Found entity 1: mod_sub File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_sub.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/montgomery_mul.v
+    Info (12023): Found entity 1: montgomery_mul File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/montgomery_mul.v Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_mul.v
+    Info (12023): Found entity 1: mod_mul File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_mul.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_inv.v
+    Info (12023): Found entity 1: mod_inv File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_inv.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ec/point_ops.v
+    Info (12023): Found entity 1: point_ops File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ec/point_ops.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/scalar_mult.v
+    Info (12023): Found entity 1: scalar_mult File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/scalar_mult.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v
+    Info (12023): Found entity 1: sha256_compress File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_hash.v
+    Info (12023): Found entity 1: sha256_hash File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_hash.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v
+    Info (12023): Found entity 1: hmac_sha256 File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/rfc6979.v
+    Info (12023): Found entity 1: rfc6979 File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/rfc6979.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v
+    Info (12023): Found entity 1: ecdsa_signer File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/key_manager.v
+    Info (12023): Found entity 1: key_manager File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/key_manager.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v
+    Info (12023): Found entity 1: tinysign_core File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/platform/tinysign_de10nano.v
+    Info (12023): Found entity 1: tinysign_de10nano File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/platform/tinysign_de10nano.v Line: 5
+Info (12127): Elaborating entity "tinysign_de10nano" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at tinysign_de10nano.v(22): object "unused_read" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/platform/tinysign_de10nano.v Line: 22
+Warning (10036): Verilog HDL or VHDL warning at tinysign_de10nano.v(23): object "unused_busy" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/platform/tinysign_de10nano.v Line: 23
+Info (12128): Elaborating entity "tinysign_core" for hierarchy "tinysign_core:u_core" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/platform/tinysign_de10nano.v Line: 19
+Info (10264): Verilog HDL Case Statement information at tinysign_core.v(40): all case item expressions in this case statement are onehot File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 40
+Warning (10762): Verilog HDL Case Statement warning at tinysign_core.v(84): can't check case statement for completeness because the case expression has too many possible states File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 84
+Warning (10230): Verilog HDL assignment warning at tinysign_core.v(105): truncated value with size 8 to match size of target (3) File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 105
+Info (12128): Elaborating entity "key_manager" for hierarchy "tinysign_core:u_core|key_manager:u_key_manager" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 30
+Warning (10036): Verilog HDL or VHDL warning at key_manager.v(22): object "point_z_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/key_manager.v Line: 22
+Info (12128): Elaborating entity "scalar_mult" for hierarchy "tinysign_core:u_core|key_manager:u_key_manager|scalar_mult:u_scalar" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/key_manager.v Line: 34
+Warning (10230): Verilog HDL assignment warning at scalar_mult.v(64): truncated value with size 32 to match size of target (9) File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/scalar_mult.v Line: 64
+Info (12128): Elaborating entity "point_ops" for hierarchy "tinysign_core:u_core|key_manager:u_key_manager|scalar_mult:u_scalar|point_ops:u_point_ops" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/scalar_mult.v Line: 46
+Info (12128): Elaborating entity "mod_add" for hierarchy "tinysign_core:u_core|key_manager:u_key_manager|scalar_mult:u_scalar|point_ops:u_point_ops|mod_add:u_add" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ec/point_ops.v Line: 28
+Warning (10230): Verilog HDL assignment warning at mod_add.v(32): truncated value with size 257 to match size of target (256) File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_add.v Line: 32
+Info (12128): Elaborating entity "mod_sub" for hierarchy "tinysign_core:u_core|key_manager:u_key_manager|scalar_mult:u_scalar|point_ops:u_point_ops|mod_sub:u_sub" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ec/point_ops.v Line: 29
+Info (12128): Elaborating entity "mod_mul" for hierarchy "tinysign_core:u_core|key_manager:u_key_manager|scalar_mult:u_scalar|point_ops:u_point_ops|mod_mul:u_mul" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ec/point_ops.v Line: 30
+Info (12128): Elaborating entity "montgomery_mul" for hierarchy "tinysign_core:u_core|key_manager:u_key_manager|scalar_mult:u_scalar|point_ops:u_point_ops|mod_mul:u_mul|montgomery_mul:u_montgomery" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/arithmetic/mod_mul.v Line: 42
+Info (12128): Elaborating entity "mod_inv" for hierarchy "tinysign_core:u_core|key_manager:u_key_manager|mod_inv:u_inverse" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/key_manager.v Line: 35
+Info (12128): Elaborating entity "ecdsa_signer" for hierarchy "tinysign_core:u_core|ecdsa_signer:u_signer" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/security/tinysign_core.v Line: 33
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(22): object "z_point_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 22
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(22): object "zinv_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 22
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(22): object "z2_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 22
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(22): object "rd_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 22
+Warning (10036): Verilog HDL or VHDL warning at ecdsa_signer.v(22): object "sum_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 22
+Info (10264): Verilog HDL Case Statement information at ecdsa_signer.v(55): all case item expressions in this case statement are onehot File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 55
+Info (12128): Elaborating entity "rfc6979" for hierarchy "tinysign_core:u_core|ecdsa_signer:u_signer|rfc6979:u_nonce" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/ecdsa/ecdsa_signer.v Line: 34
+Info (12128): Elaborating entity "hmac_sha256" for hierarchy "tinysign_core:u_core|ecdsa_signer:u_signer|rfc6979:u_nonce|hmac_sha256:u_hmac" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/rfc6979.v Line: 22
+Warning (10036): Verilog HDL or VHDL warning at hmac_sha256.v(10): object "inner_digest" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v Line: 10
+Warning (10036): Verilog HDL or VHDL warning at hmac_sha256.v(11): object "message_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v Line: 11
+Warning (10036): Verilog HDL or VHDL warning at hmac_sha256.v(12): object "length_reg" assigned a value but never read File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v Line: 12
+Warning (10230): Verilog HDL assignment warning at hmac_sha256.v(41): truncated value with size 32 to match size of target (8) File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v Line: 41
+Info (12128): Elaborating entity "sha256_hash" for hierarchy "tinysign_core:u_core|ecdsa_signer:u_signer|rfc6979:u_nonce|hmac_sha256:u_hmac|sha256_hash:u_hash" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/nonce/hmac_sha256.v Line: 21
+Warning (10230): Verilog HDL assignment warning at sha256_hash.v(45): truncated value with size 32 to match size of target (3) File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_hash.v Line: 45
+Info (12128): Elaborating entity "sha256_compress" for hierarchy "tinysign_core:u_core|ecdsa_signer:u_signer|rfc6979:u_nonce|hmac_sha256:u_hmac|sha256_hash:u_hash|sha256_compress:u_compress" File: /home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_hash.v Line: 23
+Error (293007): Current module quartus_map ended unexpectedly. Verify that you have sufficient memory available to compile your design. You can view disk space and physical RAM requirements on the System and Software Requirements page of the Intel FPGA website (http://dl.altera.com/requirements/).
+Error: Flow compile (for project /home/mateus/Documents/Peruri/TinySign_Verilog/quartus/TinySign) was not successful
+Error: ERROR: Error(s) found while running an executable. See report file(s) for error message(s). Message log indicates which executable was run last.
+
+Error (23031): Evaluation of Tcl script /home/mateus/intelFPGA_lite/20.1/quartus/common/tcl/internal/qsh_flow.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 4 errors, 18 warnings
+    Error: Peak virtual memory: 488 megabytes
+    Error: Processing ended: Wed Oct  7 21:10:32 2026
+    Error: Elapsed time: 00:00:51
+    Error: Total CPU time (on all processors): 00:00:48

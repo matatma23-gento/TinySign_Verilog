@@ -1,0 +1,499 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" version="24.7.17">
+  <diagram id="puri-1" name="01 Alur utama">
+    <mxGraphModel dx="1200" dy="1450" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1450" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="PURI-Sign | Alur kerja sistem" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=28;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="25" width="1110" height="44" />
+        </mxCell>
+        <mxCell id="subtitle" value="Host menyiapkan input; FPGA menyimpan kunci dan menghitung signature ECDSA P-256." style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="77" width="1110" height="48" />
+        </mxCell>
+        <mxCell id="footer" value="PURI-Sign | Berdasarkan RTL shared-engine, 8 Oktober 2026 | Diagram alur, bukan timing fisik" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=13;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="1405" width="1110" height="28" />
+        </mxCell>
+        <mxCell id="begin" value="Reset / awal penggunaan" style="ellipse;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F2F5F8;strokeColor=#7C8C9B;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="145" width="440" height="58" />
+        </mxCell>
+        <mxCell id="load" value="HOST → FPGA&#10;Tulis private key d: 8 word × 32 bit" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#EAF2FC;strokeColor=#3973A8;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="243" width="440" height="78" />
+        </mxCell>
+        <mxCell id="prov" value="CMD_PROVISION = 1&#10;Validasi key → hitung public key Q = dG" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#EAF2FC;strokeColor=#3973A8;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="361" width="440" height="86" />
+        </mxCell>
+        <mxCell id="lock" value="CMD_LOCK = 2&#10;key_valid = 1 → key_locked = 1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#E8F5EF;strokeColor=#25816C;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="487" width="440" height="78" />
+        </mxCell>
+        <mxCell id="doc" value="HOST&#10;Hash dokumen → digest SHA-256 256 bit" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F2F5F8;strokeColor=#7C8C9B;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="605" width="440" height="78" />
+        </mxCell>
+        <mxCell id="digest" value="HOST → FPGA&#10;Tulis digest: 8 word × 32 bit" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#EAF2FC;strokeColor=#3973A8;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="723" width="440" height="78" />
+        </mxCell>
+        <mxCell id="sign" value="CMD_SIGN = 4&#10;Core memeriksa key_valid dan key_locked" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#E8F5EF;strokeColor=#25816C;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="841" width="440" height="86" />
+        </mxCell>
+        <mxCell id="compute" value="FPGA: jalankan signing&#10;RFC6979 → kG → r dan s" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#E8F5EF;strokeColor=#25816C;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="967" width="440" height="78" />
+        </mxCell>
+        <mxCell id="read" value="HOST: tunggu transaksi selesai&#10;Periksa busy / done / error; baca r dan s" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F2F5F8;strokeColor=#7C8C9B;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1085" width="440" height="86" />
+        </mxCell>
+        <mxCell id="result" value="Signature tersedia untuk dokumen&#10;Verifikasi dilakukan di luar core ini" style="ellipse;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F2F5F8;strokeColor=#7C8C9B;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1211" width="440" height="78" />
+        </mxCell>
+        <mxCell id="q" value="Public key Q = (Qx, Qy) dapat dibaca&#10;CMD_GET_PUB = 3 memeriksa key_valid&#10;Detail provisioning: halaman 02" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#EAF2FC;strokeColor=#3973A8;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="355" width="450" height="110" />
+        </mxCell>
+        <mxCell id="hostnote" value="BATAS HOST / CORE&#10;Core menerima digest, bukan file dokumen.&#10;SHA-256 di jalur nonce dipakai HMAC.&#10;Private key berasal dari provisioning host;&#10;tidak ada generator key acak pada alur ini." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F2F5F8;strokeColor=#7C8C9B;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="600" width="450" height="155" />
+        </mxCell>
+        <mxCell id="timing" value="LATENSI SIMULASI @ 25 MHz&#10;Provisioning: 292,14824 ms&#10;Signing: 297,51360 ms&#10;Tidak termasuk transfer input/output host." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FFF4DC;strokeColor=#B68125;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="835" width="450" height="125" />
+        </mxCell>
+        <mxCell id="repeat" value="TRANSAKSI BERIKUTNYA&#10;Kunci tetap tersimpan dan terkunci.&#10;Host menulis digest baru, lalu CMD_SIGN.&#10;Untuk mengganti kunci: ZEROIZE dahulu." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#E8F5EF;strokeColor=#25816C;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="1020" width="450" height="125" />
+        </mxCell>
+        <mxCell id="z" value="ZEROIZE dapat menyela operasi aktif.&#10;Penanganan pembatalan / error: halaman 05.&#10;Setiap operasi wajib memeriksa status error." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FCEDED;strokeColor=#B65050;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="680" y="1210" width="450" height="95" />
+        </mxCell>
+        <mxCell id="edge-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="begin" target="load">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="load" target="prov">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="prov" target="lock">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lock" target="doc">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="doc" target="digest">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="digest" target="sign">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="sign" target="compute">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="compute" target="read">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="read" target="result">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="prov" target="q">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="puri-2" name="02 Provisioning">
+    <mxGraphModel dx="1200" dy="1460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1460" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Provisioning | Validasi, public key, dan lock" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=28;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="25" width="1110" height="44" />
+        </mxCell>
+        <mxCell id="subtitle" value="Owner engine = PROVISION. Private key tidak tersedia pada jalur pembacaan register." style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="77" width="1110" height="48" />
+        </mxCell>
+        <mxCell id="footer" value="PURI-Sign | Berdasarkan RTL shared-engine, 8 Oktober 2026 | Diagram alur, bukan timing fisik" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=13;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="1415" width="1110" height="28" />
+        </mxCell>
+        <mxCell id="input" value="Tulis 8 word private key ke staging&#10;Kemudian CMD_PROVISION" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#EAF2FC;strokeColor=#3973A8;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="150" width="440" height="78" />
+        </mxCell>
+        <mxCell id="valid" value="Key belum valid, 8 word lengkap,&#10;dan 1 ≤ d &lt; n?" style="rhombus;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=15;fontColor=#243746;fillColor=#FFF4DC;strokeColor=#B68125;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="275" width="440" height="120" />
+        </mxCell>
+        <mxCell id="scalar" value="SHARED SCALAR&#10;Hitung Q = dG → koordinat Jacobian (X,Y,Z)" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#EAF2FC;strokeColor=#3973A8;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="450" width="440" height="86" />
+        </mxCell>
+        <mxCell id="inv" value="SHARED INVERSE&#10;u = Z⁻¹ mod p" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F0EBFA;strokeColor=#8260A7;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="580" width="440" height="78" />
+        </mxCell>
+        <mxCell id="mul" value="SHARED MULTIPLY, dipakai berurutan&#10;u² → u³ → Qx = X·u² → Qy = Y·u³&#10;Semua operasi modulo p" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F0EBFA;strokeColor=#8260A7;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="700" width="440" height="105" />
+        </mxCell>
+        <mxCell id="commit" value="Simpan d pada key_reg; simpan Qx dan Qy&#10;key_valid = 1; bersihkan staging / sementara&#10;Core: done = 1, kembali IDLE" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#E8F5EF;strokeColor=#25816C;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="850" width="440" height="105" />
+        </mxCell>
+        <mxCell id="lock" value="HOST: CMD_LOCK&#10;Key valid → key_locked = 1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#E8F5EF;strokeColor=#25816C;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1000" width="440" height="78" />
+        </mxCell>
+        <mxCell id="ready" value="Kunci siap dipakai signing&#10;Readback private key tetap 0" style="ellipse;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#E8F5EF;strokeColor=#25816C;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1125" width="440" height="78" />
+        </mxCell>
+        <mxCell id="yes" value="Ya" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=15;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="290" y="405" width="60" height="28" />
+        </mxCell>
+        <mxCell id="invalid" value="Tolak provisioning&#10;key_error → core error_code = 0x02&#10;Tidak meneruskan perhitungan public key" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FCEDED;strokeColor=#B65050;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="710" y="285" width="420" height="100" />
+        </mxCell>
+        <mxCell id="no" value="Tidak" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=15;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="580" y="305" width="100" height="28" />
+        </mxCell>
+        <mxCell id="error" value="Jika salah satu engine mengirim error:&#10;hentikan urutan controller → IDLE&#10;Core melaporkan error_code = 0x02&#10;Host memeriksa error sebelum lanjut." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FCEDED;strokeColor=#B65050;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="710" y="595" width="420" height="125" />
+        </mxCell>
+        <mxCell id="policy" value="ATURAN KEY&#10;Penulisan key ditolak jika key_valid&#10;atau key_locked sudah aktif.&#10;LOCK memerlukan key yang valid.&#10;Penggantian key dimulai dengan ZEROIZE." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F2F5F8;strokeColor=#7C8C9B;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="710" y="850" width="420" height="150" />
+        </mxCell>
+        <mxCell id="symbols" value="NOTASI&#10;p: modulus field P-256&#10;n: orde subgroup P-256&#10;G: base point; d: private key" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F2F5F8;strokeColor=#7C8C9B;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="710" y="1130" width="420" height="115" />
+        </mxCell>
+        <mxCell id="latency" value="7.303.706 siklus core = 292,14824 ms pada 25 MHz&#10;Angka berasal dari trace simulasi; tidak mencakup penulisan 8 word key atau CMD_LOCK." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FFF4DC;strokeColor=#B68125;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="100" y="1280" width="1030" height="82" />
+        </mxCell>
+        <mxCell id="edge-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="input" target="valid">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="valid" target="scalar">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="scalar" target="inv">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="inv" target="mul">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mul" target="commit">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="commit" target="lock">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="lock" target="ready">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="valid" target="invalid">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="puri-3" name="03 Signing ECDSA">
+    <mxGraphModel dx="1200" dy="1770" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1770" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Signing | Dari digest menjadi signature (r, s)" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=28;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="25" width="1110" height="44" />
+        </mxCell>
+        <mxCell id="subtitle" value="Owner engine = SIGN. p adalah modulus field; n adalah orde subgroup; seluruh operand utama 256 bit." style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="77" width="1110" height="48" />
+        </mxCell>
+        <mxCell id="footer" value="PURI-Sign | Berdasarkan RTL shared-engine, 8 Oktober 2026 | Diagram alur, bukan timing fisik" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=13;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="1725" width="1110" height="28" />
+        </mxCell>
+        <mxCell id="start" value="HOST: tulis digest, lalu CMD_SIGN" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F2F5F8;strokeColor=#7C8C9B;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="145" width="500" height="65" />
+        </mxCell>
+        <mxCell id="check" value="key_valid = 1 dan key_locked = 1?" style="rhombus;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=15;fontColor=#243746;fillColor=#FFF4DC;strokeColor=#B68125;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="255" width="500" height="110" />
+        </mxCell>
+        <mxCell id="latch" value="Signer menyalin private key d&#10;Validasi 1 ≤ d &lt; n; z = digest mod n" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#E8F5EF;strokeColor=#25816C;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="415" width="500" height="80" />
+        </mxCell>
+        <mxCell id="nonce" value="RFC6979 → HMAC-SHA-256&#10;Bentuk nonce deterministik k dari d dan z" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F0EBFA;strokeColor=#8260A7;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="535" width="500" height="85" />
+        </mxCell>
+        <mxCell id="scalar" value="SHARED SCALAR&#10;R = kG → (X, Y, Z) Jacobian" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#EAF2FC;strokeColor=#3973A8;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="660" width="500" height="80" />
+        </mxCell>
+        <mxCell id="affine" value="SHARED INVERSE + MULTIPLY&#10;u = Z⁻¹ mod p; x = X·u² mod p&#10;r = x mod n" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F0EBFA;strokeColor=#8260A7;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="780" width="500" height="100" />
+        </mxCell>
+        <mxCell id="rcheck" value="r ≠ 0?" style="rhombus;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FFF4DC;strokeColor=#B68125;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="925" width="500" height="105" />
+        </mxCell>
+        <mxCell id="kinv" value="SHARED INVERSE&#10;v = k⁻¹ mod n" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F0EBFA;strokeColor=#8260A7;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="1075" width="500" height="75" />
+        </mxCell>
+        <mxCell id="math" value="SHARED MULTIPLY + mod_add lokal&#10;t = (z + r·d) mod n&#10;s = v·t mod n" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F0EBFA;strokeColor=#8260A7;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="1190" width="500" height="95" />
+        </mxCell>
+        <mxCell id="scheck" value="s ≠ 0?" style="rhombus;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FFF4DC;strokeColor=#B68125;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="1325" width="500" height="105" />
+        </mxCell>
+        <mxCell id="publish" value="Signer: keluarkan r,s; hapus d_reg dan k_reg&#10;Core: simpan r,s; sign_valid = 1; done = 1&#10;Kembali IDLE; key_manager tetap menyimpan d" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#E8F5EF;strokeColor=#25816C;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="1475" width="500" height="105" />
+        </mxCell>
+        <mxCell id="y1" value="Ya" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=15;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="310" y="378" width="50" height="28" />
+        </mxCell>
+        <mxCell id="y2" value="Ya" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=15;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="310" y="1035" width="50" height="28" />
+        </mxCell>
+        <mxCell id="y3" value="Ya" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=15;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="310" y="1435" width="50" height="28" />
+        </mxCell>
+        <mxCell id="reject" value="Tolak CMD_SIGN&#10;Core: error_code = 0x01&#10;Signer tidak dijalankan" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FCEDED;strokeColor=#B65050;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="760" y="255" width="355" height="100" />
+        </mxCell>
+        <mxCell id="no1" value="Tidak" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=15;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="630" y="275" width="75" height="28" />
+        </mxCell>
+        <mxCell id="nonce_note" value="Nonce tidak dibaca oleh host.&#10;Input key + digest yang sama&#10;menghasilkan nonce deterministik." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F2F5F8;strokeColor=#7C8C9B;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="755" y="535" width="365" height="95" />
+        </mxCell>
+        <mxCell id="failed" value="GAGAL TRANSAKSI SIGNER&#10;r/s internal, d_reg, k_reg dibersihkan&#10;Signer memberi error → IDLE&#10;Core: error_code = 0x02&#10;Tidak ada retry otomatis untuk r/s = 0" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FCEDED;strokeColor=#B65050;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="745" y="1120" width="390" height="140" />
+        </mxCell>
+        <mxCell id="no2" value="Tidak" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=15;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="620" y="945" width="75" height="28" />
+        </mxCell>
+        <mxCell id="no3" value="Tidak" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=15;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="620" y="1350" width="75" height="28" />
+        </mxCell>
+        <mxCell id="engine_err" value="Error dari nonce / scalar / inverse /&#10;multiply / add juga menuju&#10;GAGAL TRANSAKSI SIGNER." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FCEDED;strokeColor=#B65050;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="745" y="785" width="390" height="100" />
+        </mxCell>
+        <mxCell id="status" value="STATUS HASIL&#10;sign_valid dan r/s core dapat masih&#10;memuat hasil transaksi sebelumnya.&#10;Host harus memeriksa busy, done, error&#10;untuk menentukan hasil transaksi baru." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FFF4DC;strokeColor=#B68125;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="735" y="1460" width="410" height="130" />
+        </mxCell>
+        <mxCell id="latency" value="7.437.840 siklus core = 297,51360 ms @ 25 MHz&#10;Tahap scalar sekitar 286,761 ms; angka simulasi mencakup handshake controller." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FFF4DC;strokeColor=#B68125;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="85" y="1630" width="1050" height="80" />
+        </mxCell>
+        <mxCell id="edge-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="start" target="check">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="check" target="latch">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="latch" target="nonce">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="nonce" target="scalar">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="scalar" target="affine">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="affine" target="rcheck">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rcheck" target="kinv">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="kinv" target="math">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="math" target="scheck">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="scheck" target="publish">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="check" target="reject">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rcheck" target="failed">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="940" y="977" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="scheck" target="failed">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="940" y="1377" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="puri-4" name="04 Engine bersama">
+    <mxGraphModel dx="1200" dy="1440" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1440" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Arsitektur | Dua controller, satu kelompok engine" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=28;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="25" width="1110" height="44" />
+        </mxCell>
+        <mxCell id="subtitle" value="Pemilihan owner mengikuti FSM perintah core; provisioning dan signing tidak berjalan bersamaan." style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="77" width="1110" height="48" />
+        </mxCell>
+        <mxCell id="footer" value="PURI-Sign | Berdasarkan RTL shared-engine, 8 Oktober 2026 | Diagram alur, bukan timing fisik" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=13;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="1395" width="1110" height="28" />
+        </mxCell>
+        <mxCell id="host" value="HOST / antarmuka register Avalon-MM&#10;CMD, STATUS, key input, digest, public key, signature" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F2F5F8;strokeColor=#7C8C9B;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="230" y="150" width="740" height="85" />
+        </mxCell>
+        <mxCell id="fsm" value="tinysign_core: FSM perintah&#10;IDLE → PROVISION_WAIT / LOCK_WAIT / SIGN_WAIT / ZEROIZE_WAIT" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#EAF2FC;strokeColor=#3973A8;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="170" y="300" width="860" height="95" />
+        </mxCell>
+        <mxCell id="km" value="key_manager&#10;Staging key → validasi → Q = dG&#10;Penyimpanan private key + public key&#10;SHARED_ENGINES = 1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#EAF2FC;strokeColor=#3973A8;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="75" y="470" width="450" height="130" />
+        </mxCell>
+        <mxCell id="sg" value="ecdsa_signer&#10;RFC6979 / HMAC-SHA-256 + mod_add&#10;Urutan ECDSA; hasil r,s&#10;SHARED_ENGINES = 1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#E8F5EF;strokeColor=#25816C;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="675" y="470" width="450" height="130" />
+        </mxCell>
+        <mxCell id="keylabel" value="d internal" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=14;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="529" y="493" width="141" height="30" />
+        </mxCell>
+        <mxCell id="mux" value="Pemilih operand / start dan pemilah done / error&#10;provision_owner atau sign_owner berasal dari FSM&#10;Respons selesai/error hanya diteruskan kepada owner aktif" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F0EBFA;strokeColor=#8260A7;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="195" y="730" width="810" height="115" />
+        </mxCell>
+        <mxCell id="scalar" value="1 × scalar_mult&#10;dG atau kG&#10;point_ops internal" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#EAF2FC;strokeColor=#3973A8;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="970" width="330" height="125" />
+        </mxCell>
+        <mxCell id="inv" value="1 × mod_inv&#10;Z⁻¹ mod p atau k⁻¹ mod n&#10;Aritmetika internal sendiri" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F0EBFA;strokeColor=#8260A7;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="435" y="970" width="330" height="125" />
+        </mxCell>
+        <mxCell id="mul" value="1 × mod_mul di level core&#10;Konversi affine dan&#10;perkalian ECDSA" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F0EBFA;strokeColor=#8260A7;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="805" y="970" width="330" height="125" />
+        </mxCell>
+        <mxCell id="counts" value="JUMLAH FISIK HIERARKIS&#10;Scalar engine: 2 → 1  |  Inverse engine: 2 → 1&#10;Total mod_mul seluruh hierarki: 8 → 4 (bukan hanya satu multiplier di seluruh chip).&#10;RFC6979 / HMAC sejak awal berada pada signer; tidak dihitung sebagai duplikasi yang dihapus." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FFF4DC;strokeColor=#B68125;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="1170" width="1070" height="130" />
+        </mxCell>
+        <mxCell id="note" value="Panah menunjukkan jalur request / pemakaian. Hasil engine kembali melalui pemilah respons pada blok tengah." style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=14;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="65" y="1330" width="1070" height="35" />
+        </mxCell>
+        <mxCell id="edge-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="host" target="fsm">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fsm" target="km">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="600" y="430" />
+              <mxPoint x="300" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fsm" target="sg">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="600" y="430" />
+              <mxPoint x="900" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="km" target="sg">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="km" target="mux">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="300" y="655" />
+              <mxPoint x="145" y="655" />
+              <mxPoint x="145" y="787" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="sg" target="mux">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="900" y="655" />
+              <mxPoint x="1055" y="655" />
+              <mxPoint x="1055" y="787" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mux" target="scalar">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="600" y="910" />
+              <mxPoint x="230" y="910" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mux" target="inv">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="600" y="910" />
+              <mxPoint x="600" y="910" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="mux" target="mul">
+          <mxGeometry as="geometry" relative="1">
+            <Array as="points">
+              <mxPoint x="600" y="910" />
+              <mxPoint x="970" y="910" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="puri-5" name="05 Zeroize dan error">
+    <mxGraphModel dx="1200" dy="1490" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1490" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Kontrol | ZEROIZE, status, dan penolakan akses" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=28;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="25" width="1110" height="44" />
+        </mxCell>
+        <mxCell id="subtitle" value="ZEROIZE adalah pengecualian saat busy; perintah harus ditulis dengan byte_enable = 0xF." style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="77" width="1110" height="48" />
+        </mxCell>
+        <mxCell id="footer" value="PURI-Sign | Berdasarkan RTL shared-engine, 8 Oktober 2026 | Diagram alur, bukan timing fisik" style="text;strokeColor=none;fillColor=none;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=13;fontColor=#243746;align=left;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="45" y="1445" width="1110" height="28" />
+        </mxCell>
+        <mxCell id="command" value="HOST: CMD_ZEROIZE = 5&#10;Dapat dikirim saat idle maupun operasi aktif" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FCEDED;strokeColor=#B65050;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="150" width="520" height="85" />
+        </mxCell>
+        <mxCell id="abort" value="Core memicu key_zeroize&#10;Pindah ke ZEROIZE_WAIT → owner dilepas&#10;Hapus digest dan r/s core; sign_valid = 0" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FCEDED;strokeColor=#B65050;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="290" width="520" height="100" />
+        </mxCell>
+        <mxCell id="eng" value="Reset shared scalar / inverse / multiply&#10;Clear signer dan RFC6979&#10;Batalkan pekerjaan yang sedang berlangsung" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FCEDED;strokeColor=#B65050;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="445" width="520" height="100" />
+        </mxCell>
+        <mxCell id="key" value="key_manager membersihkan staging, key,&#10;public key dan state sementara&#10;key_valid = 0; key_locked = 0; key_done = 1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FCEDED;strokeColor=#B65050;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="600" width="520" height="100" />
+        </mxCell>
+        <mxCell id="idle" value="Core menerima key_done&#10;done_latch = 1; busy = 0; zeroized = 1&#10;Kembali IDLE" style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#E8F5EF;strokeColor=#25816C;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="755" width="520" height="100" />
+        </mxCell>
+        <mxCell id="again" value="Host dapat melakukan provisioning baru" style="ellipse;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#E8F5EF;strokeColor=#25816C;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="910" width="520" height="65" />
+        </mxCell>
+        <mxCell id="writes" value="BUS WRITE SAAT BUSY&#10;Selain CMD_ZEROIZE → error_code 0x03.&#10;Operasi aktif tetap berjalan;&#10;penolakan write tidak membatalkannya." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FFF4DC;strokeColor=#B68125;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="720" y="165" width="410" height="120" />
+        </mxCell>
+        <mxCell id="byte" value="BYTE ENABLE / ALAMAT&#10;Write harus satu word penuh (0xF).&#10;Byte enable salah / alamat tidak didukung&#10;→ error_code 0x04." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FFF4DC;strokeColor=#B68125;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="720" y="335" width="410" height="120" />
+        </mxCell>
+        <mxCell id="errors" value="ERROR PERINTAH / OPERASI&#10;0x01: command / prasyarat key tidak valid&#10;0x02: key_manager atau signer gagal&#10;Status error harus diperiksa host." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#FFF4DC;strokeColor=#B68125;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="720" y="505" width="410" height="120" />
+        </mxCell>
+        <mxCell id="clear" value="CMD_CLEAR_STATUS = 6 (saat idle)&#10;Hapus done/error/error_code, sign_valid,&#10;dan zeroized. Tidak menghapus key&#10;atau isi register signature r/s." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F2F5F8;strokeColor=#7C8C9B;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="720" y="675" width="410" height="120" />
+        </mxCell>
+        <mxCell id="status" value="REGISTER STATUS&#10;ready, busy, done, error, key_valid,&#10;key_locked, sign_valid, zeroized&#10;Readback key selalu bernilai 0." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F2F5F8;strokeColor=#7C8C9B;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="720" y="845" width="410" height="120" />
+        </mxCell>
+        <mxCell id="timing" value="URUTAN PADA TRACE RTL @ 25 MHz&#10;T0: perintah diterima, key_zeroize aktif, shared engine berhenti dan sign_valid core turun.&#10;T0 + 1 siklus: key_valid dan key_locked turun.&#10;T0 + 2 siklus: core menyelesaikan ZEROIZE dan kembali idle." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#EAF2FC;strokeColor=#3973A8;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="1060" width="1060" height="135" />
+        </mxCell>
+        <mxCell id="scope" value="BATAS DIAGRAM&#10;Ini alur perilaku RTL yang tersedia, bukan klaim sertifikasi secure element atau ketahanan serangan fisik.&#10;Reset/clear logika tidak membuktikan waktu penghapusan fisik. Latensi di atas berasal dari simulasi.&#10;Integrasi clock 25 MHz, pin board, dan host tetap mengikuti batas implementasi proyek." style="rounded=1;arcSize=12;whiteSpace=wrap;html=0;fontFamily=DejaVu Sans;fontSize=16;fontColor=#243746;fillColor=#F2F5F8;strokeColor=#7C8C9B;strokeWidth=1.5;align=center;verticalAlign=middle;spacing=8;" vertex="1" parent="1">
+          <mxGeometry as="geometry" x="70" y="1240" width="1060" height="135" />
+        </mxCell>
+        <mxCell id="edge-0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="command" target="abort">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="abort" target="eng">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="eng" target="key">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="key" target="idle">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+        <mxCell id="edge-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeWidth=1.7;strokeColor=#627588;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="idle" target="again">
+          <mxGeometry as="geometry" relative="1" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Thu Oct  8 20:33:05 2026
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : TinySign
+Top-level Entity Name : tinysign_de10nano
+Family : Cyclone V
+Device : 5CSEBA6U23I7
+Power Models : Final
+Total Thermal Power Dissipation : 578.77 mW
+Core Dynamic Thermal Power Dissipation : 150.04 mW
+Core Static Thermal Power Dissipation : 413.52 mW
+I/O Thermal Power Dissipation : 15.22 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

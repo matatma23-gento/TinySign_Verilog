@@ -1,0 +1,241 @@
+{
+  "source": "rtl_simulation",
+  "timestamp_utc": "2026-10-07T10:37:54.293903+00:00",
+  "suite": "full",
+  "hardware_status": "not_run",
+  "sources_sha256": {
+    "rtl/arithmetic/mod_add.v": "46b5d77fe044db9ed5f577db8b357321494dcc25dd19fd0066732b72a41969e6",
+    "rtl/arithmetic/mod_inv.v": "05498ec7d7c50117d297238a147e21065503e58fb940d82a3ccfa77ebb553e7f",
+    "rtl/arithmetic/mod_mul.v": "4e3ddf56ee8140ab2d11422020c48a8ab89daa26d9a8928c765888897f22eb33",
+    "rtl/arithmetic/mod_sub.v": "d3cd859be2b30136372e6ee9b584bcb83c3e052cd0eb751bda175d3e0e94500c",
+    "rtl/arithmetic/montgomery_mul.v": "1c47d63c7f4def50afe3c9215d5bc7f1b2de28fa952a8f21d9cef9ea366940b7",
+    "rtl/ec/point_add.v": "fc40d09991d68b2568459482faa9e7ae6def15005d679b06a05f346a555d9d74",
+    "rtl/ec/point_double.v": "da77e76d8dd86705f3e86ef2fad24e802ebe912335fbce288e41622c73af4dfd",
+    "rtl/ec/point_ops.v": "b1243417900ee00f75d66e5decd5297d72dd218c9b31547850452e4392e867e2",
+    "rtl/ecdsa/ecdsa_signer.v": "1972155d8b5ba665766b3bb2accee9ef35d24cc316b0a28062319f7fdb97ef12",
+    "rtl/ecdsa/scalar_mult.v": "6e472aca618d38c3743637e290f9d0d20a0facdc72174512e7f8c31f9467b806",
+    "rtl/nonce/hmac_sha256.v": "561b09d486814ef27c529e86486423a14068925fde7c4f505be4959d13c1a6c0",
+    "rtl/nonce/rfc6979.v": "e1ea5dbfc6f4adb23cad5806970348c4670903b1aa57bd89331ef4268a5171eb",
+    "rtl/platform/tinysign_de10nano.v": "2cdd3e526933f8fb73edfc10f7965e0bd3a04d30b56f37466ec28d49d4ed7c1e",
+    "rtl/platform/tinysign_de10nano_selftest.v": "fefc10950efed6acc4d062a5a1983e9a65e20ad930b84b29329fa54da2244e75",
+    "rtl/security/key_manager.v": "bf0d0bb9c4acc1b68ff86b56d534f75be5346e1feeee8501fe12cf02695859c4",
+    "rtl/security/tinysign_core.v": "5a12307554763f7d694612b6562cc1faa2b040a0744fcdf8afc10372b47711de",
+    "rtl/sha256/sha256_compress.v": "fd9a42fe74caedbfcf9f8e733811978e5e2f580d94a6106c172f87f234b3514e",
+    "rtl/sha256/sha256_hash.v": "a550cb5789bc126eadcff4faea546b45490052002fc6b6e0332a6872160be58e",
+    "rtl/test_support/selftest_uart_report.v": "fffa1f18712be6b667c00db8d92b1f1dd98282b9a9f1c32b885349aba3fb2c3c",
+    "rtl/test_support/tinysign_board_selftest.v": "3a1313a3d26e69721e3c2b54afc8d0342b6b4bd326055a51a59f92e4be71ca20",
+    "rtl/test_support/uart_tx.v": "2a49c3760d251560032e20cea3b2c1d8916d0d7e014fe9571845f62a07263eb5",
+    "tb/tb_board_selftest.v": "63f0a8698f76063c2c1029bfda5a50ff94f0d8aa9068133c7d6f60d046074551",
+    "tb/tb_ecdsa_signer.v": "6163201bf7d5acd4bc62e1ac4d2d3a4248de7daf31af16cd376b26be903cfd26",
+    "tb/tb_hmac.v": "d8c0041f2f57a7d5b836fa3d176b1b4eb26c2b8709579422a83fd6e3270d3156",
+    "tb/tb_key_manager.v": "c651245fc0ee07e975b0375bc374111997e764957e98209cf6dc6be45d53e5ac",
+    "tb/tb_mod_arith.v": "971f4b2cf62e62cff05c0525942e1473ce830fa28c1ce383853fc7e5cdf61696",
+    "tb/tb_montgomery_mul.v": "a2761c4e0834136ed1d0610bbf6276d4c9aeb48334cb940fab399fdf4a99297f",
+    "tb/tb_montgomery_wave.v": "b93497cf5b611b6ff869a3cd054c0274d2cca2e300c20dca092738ce4a9e1631",
+    "tb/tb_point_ops.v": "ae8a3c09b329be6d98004be57d5f405e239f17a52cae89313a69808caeca2c4e",
+    "tb/tb_python_mod_arith.v": "2a98479a531d8375eff8320bfeb05be7270e3bf2ffed26737a24dca4652c8a1c",
+    "tb/tb_rfc6979.v": "9bc55b519f501a23a09a8cb07fa46de7814457eb0d25427f21b62b507cccc1f2",
+    "tb/tb_scalar_mult.v": "c5056bce91914229cf6d46322b4ffe1e337130d047cf0d2bc07955339a101b2d",
+    "tb/tb_selftest_uart.v": "7bc9d40226555876f4fe080e04e13f5ac9ab9aa8d0183cfc7a953edaedb2116f",
+    "tb/tb_sha256_hash.v": "a2236d266d8b0dd9fa86909fb83fc34f0f808a450e1591cf30e6d9c90ec15c20",
+    "tb/tb_tinysign_core.v": "925b9a76f506dd83b65213372d17e4c9c81a846d7fd35fb53382b4726dc5f711",
+    "tb/tb_tinysign_de10nano.v": "f0763b89ad532fb35d1c43331b3429fc1780f84fc305d2b90cd162640ba65dcb",
+    "python/p256.py": "d2ecf4a5a164947501bd93a4edff3ff2106d3184d2806a4f5f19d6191886f1b0",
+    "tests/test_board_packet.py": "2d45300817a1ad912502d2aa274099f5b9d5234eb1da95fcab312826010c879a",
+    "tests/test_p256.py": "963259f360528e03fe964ee460c9f69f5e5e45d76e63ee3c8b940da25e1821f7",
+    "scripts/build_de10nano_selftest.sh": "0e1b77d2397300a08e2a020b1028d889cf4aa8d644d9469f10c1e7de6280cd18",
+    "scripts/capture_board_test.py": "d5e2db3eaff81237c36e6aff2c4b79575671680803b54c581e7fc18e61dc36a4",
+    "scripts/compare_mod_arith.py": "d37ea31ab0cc8bc8d7b11ce04c82af6610a852d85efb8a54fb512ee2a1c629f6",
+    "scripts/gen_montgomery_vectors.py": "cca7e056b44f0c7f81fcec6b9bf4ebb6be8d9d8a19211738a16330fe21965fad",
+    "scripts/run_nonce_tests.sh": "52ffbec01e8c64061c1aea259d40b9faab247ff4bbe8dc6875c2b2883999a5f2",
+    "scripts/run_rtl_tests.sh": "6fdbeebb88247c995a88e8e6209749e31118fa3dc632d1d943785e9649e59658",
+    "scripts/run_validation.py": "c247058dc96c8b42ebe1d3327a8845d80e1533c9a5fad86a397ea382ec5ec4ac",
+    "scripts/run_yosys.py": "15e650c304d9a0feb81d9f71578a594493e643bac64fda47b3a0cc85922bd9ba"
+  },
+  "tests": [
+    {
+      "name": "python_reference",
+      "command": [
+        "/usr/bin/python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/python_reference.log",
+      "status": "pass",
+      "exit_code": 0,
+      "wall_seconds": 0.132
+    },
+    {
+      "name": "python_vs_verilog_mod_arith",
+      "command": [
+        "/usr/bin/python3",
+        "scripts/compare_mod_arith.py"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/python_vs_verilog_mod_arith.log",
+      "status": "fail",
+      "exit_code": 2,
+      "wall_seconds": 0.036
+    },
+    {
+      "name": "tb_montgomery_mul",
+      "command": [
+        "bash",
+        "scripts/run_rtl_tests.sh",
+        "tb_montgomery_mul"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/tb_montgomery_mul.log",
+      "status": "fail",
+      "exit_code": 127,
+      "wall_seconds": 0.036
+    },
+    {
+      "name": "tb_mod_arith",
+      "command": [
+        "bash",
+        "scripts/run_rtl_tests.sh",
+        "tb_mod_arith"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/tb_mod_arith.log",
+      "status": "fail",
+      "exit_code": 127,
+      "wall_seconds": 0.005
+    },
+    {
+      "name": "tb_point_ops",
+      "command": [
+        "bash",
+        "scripts/run_rtl_tests.sh",
+        "tb_point_ops"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/tb_point_ops.log",
+      "status": "fail",
+      "exit_code": 127,
+      "wall_seconds": 0.004
+    },
+    {
+      "name": "tb_scalar_mult",
+      "command": [
+        "bash",
+        "scripts/run_rtl_tests.sh",
+        "tb_scalar_mult"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/tb_scalar_mult.log",
+      "status": "fail",
+      "exit_code": 127,
+      "wall_seconds": 0.004
+    },
+    {
+      "name": "tb_hmac",
+      "command": [
+        "bash",
+        "scripts/run_rtl_tests.sh",
+        "tb_hmac"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/tb_hmac.log",
+      "status": "fail",
+      "exit_code": 127,
+      "wall_seconds": 0.004
+    },
+    {
+      "name": "tb_rfc6979",
+      "command": [
+        "bash",
+        "scripts/run_rtl_tests.sh",
+        "tb_rfc6979"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/tb_rfc6979.log",
+      "status": "fail",
+      "exit_code": 127,
+      "wall_seconds": 0.005
+    },
+    {
+      "name": "tb_sha256_hash",
+      "command": [
+        "bash",
+        "scripts/run_rtl_tests.sh",
+        "tb_sha256_hash"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/tb_sha256_hash.log",
+      "status": "fail",
+      "exit_code": 127,
+      "wall_seconds": 0.004
+    },
+    {
+      "name": "tb_ecdsa_signer",
+      "command": [
+        "bash",
+        "scripts/run_rtl_tests.sh",
+        "tb_ecdsa_signer"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/tb_ecdsa_signer.log",
+      "status": "fail",
+      "exit_code": 127,
+      "wall_seconds": 0.004
+    },
+    {
+      "name": "tb_key_manager",
+      "command": [
+        "bash",
+        "scripts/run_rtl_tests.sh",
+        "tb_key_manager"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/tb_key_manager.log",
+      "status": "fail",
+      "exit_code": 127,
+      "wall_seconds": 0.004
+    },
+    {
+      "name": "tb_tinysign_core",
+      "command": [
+        "bash",
+        "scripts/run_rtl_tests.sh",
+        "tb_tinysign_core"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/tb_tinysign_core.log",
+      "status": "fail",
+      "exit_code": 127,
+      "wall_seconds": 0.005
+    },
+    {
+      "name": "tb_tinysign_de10nano",
+      "command": [
+        "bash",
+        "scripts/run_rtl_tests.sh",
+        "tb_tinysign_de10nano"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/tb_tinysign_de10nano.log",
+      "status": "fail",
+      "exit_code": 127,
+      "wall_seconds": 0.004
+    },
+    {
+      "name": "tb_selftest_uart",
+      "command": [
+        "bash",
+        "scripts/run_rtl_tests.sh",
+        "tb_selftest_uart"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/tb_selftest_uart.log",
+      "status": "fail",
+      "exit_code": 127,
+      "wall_seconds": 0.005
+    },
+    {
+      "name": "tb_board_selftest",
+      "command": [
+        "bash",
+        "scripts/run_rtl_tests.sh",
+        "tb_board_selftest"
+      ],
+      "log": "/home/mateus/Documents/Peruri/TinySign_Verilog/reports/validation/tb_board_selftest.log",
+      "status": "fail",
+      "exit_code": 127,
+      "wall_seconds": 0.006
+    }
+  ],
+  "not_run": []
+}

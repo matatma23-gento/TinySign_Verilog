@@ -1,0 +1,6 @@
+/home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v:59: warning: @* is sensitive to all 64 words in array 'w'.
+/home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v:60: warning: @* is sensitive to all 64 words in array 'w'.
+/home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v:60: warning: @* is sensitive to all 64 words in array 'w'.
+/home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v:60: warning: @* is sensitive to all 64 words in array 'w'.
+/home/mateus/Documents/Peruri/TinySign_Verilog/rtl/sha256/sha256_compress.v:60: warning: @* is sensitive to all 64 words in array 'w'.
+PASS: shared ECC derives RFC6979 public key after aborted provisioning
